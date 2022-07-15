@@ -1,3 +1,5 @@
-button {
-  @apply rounded-full bg-red-900 text-center py-5 px-4 text-white;
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white text-sm px-7 py-[0.6rem] rounded-md whitespace-nowrap align-middle font-bold select-none;
+  }
 }

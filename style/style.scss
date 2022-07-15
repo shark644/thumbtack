@@ -3,4 +3,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "./fonts";
+
 @import "./component/button";
+
+body {
+  font-family: "Mark", Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  @apply text-black;
+}

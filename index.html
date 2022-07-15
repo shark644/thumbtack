@@ -7,8 +7,76 @@
     <title>Dev: Thumbtack</title>
   </head>
   <body>
-    <div class="flex justify-center pt-5">
-      <button>Welcome to Thumbtack</button>
+    <div
+      class="flex items-center justify-between p-2 bg-white fixed top-0 left-0 right-0 shadow-md z-50"
+    >
+      <div class="flex text-black p-2">
+        <button
+          class="inline-block p-0 m-0 bg-none border-none cursor-pointer"
+          aria-label="Close"
+          type="button"
+        >
+          <span class="flex items-center"
+            ><svg
+              height="18"
+              width="18"
+              fill="currentColor"
+              viewBox="0 0 18 18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.771 3.357L9.013 7.6l4.244-4.242a1 1 0 111.414 1.414l-4.243 4.242 4.243 4.244a1 1 0 01-1.414 1.414l-4.244-4.243-4.242 4.243a1 1 0 01-1.414-1.414L7.6 9.013 3.357 4.771a1 1 0 111.414-1.414z"
+              ></path></svg
+          ></span>
+        </button>
+      </div>
+      <svg width="48" height="48" class="mr2" viewBox="0 0 88 88">
+        <defs>
+          <filter
+            id="customer-a"
+            width="125%"
+            height="125%"
+            x="-12.5%"
+            y="-11.2%"
+            filterUnits="objectBoundingBox"
+          >
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur
+              in="shadowOffsetOuter1"
+              result="shadowBlurOuter1"
+              stdDeviation="3"
+            ></feGaussianBlur>
+            <feColorMatrix
+              in="shadowBlurOuter1"
+              result="shadowMatrixOuter1"
+              values="0 0 0 0 0.184313725 0 0 0 0 0.188235294 0 0 0 0 0.2 0 0 0 0.2 0"
+            ></feColorMatrix>
+            <feMerge>
+              <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+          <linearGradient id="customer-b" x1="50%" x2="50%" y1="1.736%" y2="99.434%">
+            <stop offset="0%" stop-color="#00A8E6"></stop>
+            <stop offset="100%" stop-color="#009FD9"></stop>
+          </linearGradient>
+        </defs>
+        <g fill="none" fill-rule="evenodd" filter="url(#customer-a)" transform="translate(6 5)">
+          <rect width="76" height="76" fill="#FFF" rx="14"></rect>
+          <path
+            fill="url(#customer-b)"
+            d="M24.332 31.114h27.336V24.89H24.332v6.223zM41.321 48.39c0 2.532-.664 5.02-1.926 7.214L38 58.03l-1.395-2.426a14.473 14.473 0 0 1-1.926-7.214V36.814c1.649-2.3 4.11-3.114 6.642-3.114v14.69zM38 10c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+          ></path>
+        </g>
+      </svg>
+      <div class="overflow-hidden leading-3 ml-2">
+        <p class="leading-6">Thumbtack for Android</p>
+      </div>
+      <div class="flex-grow text-right">
+        <button class="btn-primary" type="button">
+          <span class="">Install</span>
+        </button>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
