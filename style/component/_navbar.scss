@@ -1,0 +1,25 @@
+@layer components {
+  .navbar {
+    @apply border-b border-gray-200 flex items-center px-3;
+  }
+
+  .nav-links {
+    @apply flex ml-auto items-center;
+
+    button {
+      @apply mr-4;
+    }
+
+    a {
+      @apply text-sm self-stretch flex items-center h-16 px-4 relative 
+      hover:after:content-[''] hover:after:w-full hover:after:border-grayish hover:after:border-b-2
+      hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:opacity-40
+      active:after:opacity-100 active:after:border-primary focus:after:opacity-100 focus:after:border-primary;
+    }
+
+    .active {
+      @apply after:content-[''] after:w-full after:border-primary after:border-b-2
+      after:absolute after:bottom-0 after:left-0 hover:after:border-primary hover:after:opacity-100;
+    }
+  }
+}

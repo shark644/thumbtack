@@ -1,0 +1,68 @@
+.tooltip {
+  -webkit-text-size-adjust: 100%;
+  font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  box-shadow: 0 1px 3px 0 rgba(47, 48, 51, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  max-width: 235px;
+  background: #5968e2;
+  color: #fff;
+  // bottom: 0px;
+  inset: 0px auto auto 0px;
+  z-index: 60;
+  @apply absolute w-max top-full -left-1/2 mt-4;
+
+  p {
+    -webkit-text-size-adjust: 100%;
+    font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    color: #fff;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 12px !important;
+    line-height: 18px !important;
+
+    span {
+      -webkit-text-size-adjust: 100%;
+      font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+      color: #fff;
+      font-size: 12px !important;
+      line-height: 18px !important;
+      box-sizing: inherit;
+    }
+  }
+
+  .up-arrow {
+    -webkit-text-size-adjust: 100%;
+    font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #fff;
+    box-sizing: inherit;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-width: 0 8px 8px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    top: -8px;
+    border-bottom-color: #5968e2;
+    position: absolute;
+    left: 0px;
+    transform: translate3d(109.5px, 0px, 0px);
+  }
+}
