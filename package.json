@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "firebase": "^9.9.0",
+    "firebase-tools": "^11.2.2",
     "postcss": "^8.4.14",
     "postcss-nested": "^5.0.6",
     "sass": "^1.53.0",
