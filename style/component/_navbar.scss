@@ -1,25 +1,77 @@
 @layer components {
+  $height: 64px;
   .navbar {
-    @apply border-b border-gray-200 flex items-center px-3;
+    @apply border-b bg-white border-gray-200 flex items-center px-3 z-50;
+  }
+  .brand {
+    @apply hidden md:block;
   }
 
-  .nav-links {
-    @apply flex ml-auto items-center;
+  .nav-toggle {
+    @apply flex items-center gap-1 md:hidden self-stretch;
+    height: $height;
+    svg {
+      @apply transition-transform duration-300 ease-out;
+    }
+  }
+  /* .rotate-up {
+    @apply transition-transform duration-300 ease-out;
+    @apply rotate-180;
+  } */
+
+  .nav-links-desktop {
+    @apply hidden md:flex ml-auto items-center;
 
     button {
       @apply mr-4;
     }
 
     a {
-      @apply text-sm self-stretch flex items-center h-16 px-4 relative 
+      @apply text-sm self-stretch flex items-center px-4 relative 
       hover:after:content-[''] hover:after:w-full hover:after:border-grayish hover:after:border-b-2
       hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:opacity-40
       active:after:opacity-100 active:after:border-primary focus:after:opacity-100 focus:after:border-primary;
+      height: $height;
     }
-
     .active {
       @apply after:content-[''] after:w-full after:border-primary after:border-b-2
       after:absolute after:bottom-0 after:left-0 hover:after:border-primary hover:after:opacity-100;
+    }
+  }
+
+  .nav-links-mobile {
+    @apply flex md:hidden flex-col absolute w-screen left-0 top-0 -z-40  bg-white;
+    margin-top: $height;
+    height: calc(100vh - $height);
+
+    a {
+      @apply text-xl py-4 px-3 bg-white z-20;
+      font-family: "Mark bold", Avenir, Helvetica, Arial, sans-serif;
+    }
+  }
+
+  .submenu {
+    @apply flex flex-col sm:flex-row px-6 gap-5 sm:gap-10 z-10;
+    .col {
+      // @apply flex flex-col gap-10;
+    }
+    .title {
+      @apply text-sm font-bold mb-2;
+    }
+    ol {
+      @apply flex flex-col gap-2;
+    }
+    li {
+    }
+    a {
+      @apply p-0 text-base cursor-pointer;
+      font-family: "Mark", Avenir, Helvetica, Arial, sans-serif;
+    }
+    .seeAllLink {
+      @apply text-base font-bold flex items-center gap-1 mt-2;
+      svg {
+        @apply fill-grayish;
+      }
     }
   }
 }
