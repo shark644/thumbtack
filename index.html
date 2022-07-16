@@ -152,255 +152,240 @@
           </svg>
         </button>
 
-        <div
-          id="exploreMenuDesktop"
-          x-show="showExploreMenu"
-          x-cloak
-          @click.outside="showExploreMenu = false"
-          x-transition:enter="transition ease-out duration-200"
-          x-transition:enter-start="-translate-y-full opacity-0"
-          x-transition:enter-end="translate-y-0 opacity-100"
-          x-transition:leave="transition ease-in duration-200"
-          x-transition:leave-start="translate-y-0 opacity-100"
-          x-transition:leave-end="-translate-y-full opacity-0"
-        ></div>
-
         <template x-teleport="#exploreMenuMobile">
-          <div>
-            <div class="submenu">
-              <div class="col">
-                <div>
-                  <div class="title">Home</div>
-                  <ul>
-                    <li>
-                      <a href="/k/cheap-moving/near-me/" target="_self">
-                        <p>
-                          <span>Cheap Movers</span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/k/house-cleaning/near-me/" target="_self"
-                        ><p>
-                          <span>House Cleaning Services</span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/k/electricians/near-me/" target="_self"
-                        ><p>
-                          <span>Electricians</span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/k/local-roofers/near-me/" target="_self"
-                        ><p>
-                          <span>Local Roofers</span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/k/handyman/near-me/" target="_self"
-                        ><p>
-                          <span>Handyman Services</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/movers/near-me/" target="_self"
-                        ><p>
-                          <span>Movers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/last-minute-movers/near-me/" target="_self"
-                        ><p>
-                          <span>Last Minute Movers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/general-contractors/near-me/" target="_self"
-                        ><p>
-                          <span>General Contractors</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/single-item-movers/near-me/" target="_self"
-                        ><p>
-                          <span>Single Item Movers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/home-painters/near-me/" target="_self"
-                        ><p>
-                          <span>Home Painters</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/affordable-roofers/near-me/" target="_self"
-                        ><p>
-                          <span>Affordable Roofers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/interior-painting/near-me/" target="_self"
-                        ><p>
-                          <span>Interior Painters</span>
-                        </p></a
-                      >
-                    </li>
-                  </ul>
-                  <a class="seeAllLink" href="/home-remodeling" target="_self">
-                    <span>See all</span>
-                    <svg
-                      class="h2 m_h1 black-300"
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
+          <div class="submenu">
+            <div class="col">
+              <div>
+                <div class="title">Home</div>
+                <ul>
+                  <li>
+                    <a href="/k/cheap-moving/near-me/" target="_self">
+                      <p>
+                        <span>Cheap Movers</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/k/house-cleaning/near-me/" target="_self"
+                      ><p>
+                        <span>House Cleaning Services</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/k/electricians/near-me/" target="_self"
+                      ><p>
+                        <span>Electricians</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/k/local-roofers/near-me/" target="_self"
+                      ><p>
+                        <span>Local Roofers</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/k/handyman/near-me/" target="_self"
+                      ><p>
+                        <span>Handyman Services</span>
+                      </p></a
                     >
-                      <path
-                        d="M9.764 14.646L16 9 9.725 3.311a1 1 0 00-1.482 1.342L11.75 8H3.002A1 1 0 103 10h8.75l-3.449 3.285c-.187.2-.301.435-.301.715a1 1 0 001 1c.306 0 .537-.151.764-.354z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
+                  </li>
+                  <li>
+                    <a href="/k/movers/near-me/" target="_self"
+                      ><p>
+                        <span>Movers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/last-minute-movers/near-me/" target="_self"
+                      ><p>
+                        <span>Last Minute Movers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/general-contractors/near-me/" target="_self"
+                      ><p>
+                        <span>General Contractors</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/single-item-movers/near-me/" target="_self"
+                      ><p>
+                        <span>Single Item Movers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/home-painters/near-me/" target="_self"
+                      ><p>
+                        <span>Home Painters</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/affordable-roofers/near-me/" target="_self"
+                      ><p>
+                        <span>Affordable Roofers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/interior-painting/near-me/" target="_self"
+                      ><p>
+                        <span>Interior Painters</span>
+                      </p></a
+                    >
+                  </li>
+                </ul>
+                <a class="seeAllLink" href="/home-remodeling" target="_self">
+                  <span>See all</span>
+                  <svg
+                    class="h2 m_h1 black-300"
+                    height="18"
+                    width="18"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.764 14.646L16 9 9.725 3.311a1 1 0 00-1.482 1.342L11.75 8H3.002A1 1 0 103 10h8.75l-3.449 3.285c-.187.2-.301.435-.301.715a1 1 0 001 1c.306 0 .537-.151.764-.354z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
-              <div class="col">
-                <div>
-                  <div class="title">Events and more</div>
-                  <ul>
-                    <li>
-                      <a href="/k/affordable-attorneys/near-me/" target="_self"
-                        ><p>
-                          <span>Affordable Attorneys</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/personal-trainers/near-me/" target="_self"
-                        ><p>
-                          <span>Personal Trainers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/app-developers/near-me/" target="_self"
-                        ><p>
-                          <span>App Developers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/freelance-web-designers/near-me/" target="_self"
-                        ><p>
-                          <span>Freelance Web Designers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/affordable-photographers/near-me/" target="_self"
-                        ><p>
-                          <span>Affordable Photographers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/k/roofing/near-me/" target="_self"
-                        ><p>
-                          <span>Roofing Contractors</span>
-                        </p></a
-                      >
-                    </li>
-                  </ul>
-                  <a class="seeAllLink" href="/events" target="_self">
-                    <span>See all</span>
-                    <svg
-                      class="h2 m_h1 black-300"
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
+            </div>
+            <div class="col">
+              <div>
+                <div class="title">Events and more</div>
+                <ul>
+                  <li>
+                    <a href="/k/affordable-attorneys/near-me/" target="_self"
+                      ><p>
+                        <span>Affordable Attorneys</span>
+                      </p></a
                     >
-                      <path
-                        d="M9.764 14.646L16 9 9.725 3.311a1 1 0 00-1.482 1.342L11.75 8H3.002A1 1 0 103 10h8.75l-3.449 3.285c-.187.2-.301.435-.301.715a1 1 0 001 1c.306 0 .537-.151.764-.354z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
+                  </li>
+                  <li>
+                    <a href="/k/personal-trainers/near-me/" target="_self"
+                      ><p>
+                        <span>Personal Trainers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/app-developers/near-me/" target="_self"
+                      ><p>
+                        <span>App Developers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/freelance-web-designers/near-me/" target="_self"
+                      ><p>
+                        <span>Freelance Web Designers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/affordable-photographers/near-me/" target="_self"
+                      ><p>
+                        <span>Affordable Photographers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/k/roofing/near-me/" target="_self"
+                      ><p>
+                        <span>Roofing Contractors</span>
+                      </p></a
+                    >
+                  </li>
+                </ul>
+                <a class="seeAllLink" href="/events" target="_self">
+                  <span>See all</span>
+                  <svg
+                    class="h2 m_h1 black-300"
+                    height="18"
+                    width="18"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.764 14.646L16 9 9.725 3.311a1 1 0 00-1.482 1.342L11.75 8H3.002A1 1 0 103 10h8.75l-3.449 3.285c-.187.2-.301.435-.301.715a1 1 0 001 1c.306 0 .537-.151.764-.354z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
-              <div class="col">
-                <div>
-                  <div class="title">Other Info</div>
-                  <ul>
-                    <li>
-                      <a href="/home-maintenance" target="_self"
-                        ><p>
-                          <span>Home Maintenance</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/weddings/" target="_self"
-                        ><p>
-                          <span>Weddings</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/prices" target="_self"
-                        ><p>
-                          <span>Cost Guides</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/guides/" target="_self"
-                        ><p>
-                          <span>Project Guides</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/questions" target="_self"
-                        ><p>
-                          <span>Questions and Answers</span>
-                        </p></a
-                      >
-                    </li>
-                    <li>
-                      <a href="/app/" target="_self"
-                        ><p>
-                          <span>Get the App</span>
-                        </p></a
-                      >
-                    </li>
-                  </ul>
-                  <a class="seeAllLink" href="/more-services" target="_self">
-                    <span>See all</span>
-                    <svg
-                      class="h2 m_h1 black-300"
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
+            </div>
+            <div class="col">
+              <div>
+                <div class="title">Other Info</div>
+                <ul>
+                  <li>
+                    <a href="/home-maintenance" target="_self"
+                      ><p>
+                        <span>Home Maintenance</span>
+                      </p></a
                     >
-                      <path
-                        d="M9.764 14.646L16 9 9.725 3.311a1 1 0 00-1.482 1.342L11.75 8H3.002A1 1 0 103 10h8.75l-3.449 3.285c-.187.2-.301.435-.301.715a1 1 0 001 1c.306 0 .537-.151.764-.354z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
+                  </li>
+                  <li>
+                    <a href="/weddings/" target="_self"
+                      ><p>
+                        <span>Weddings</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/prices" target="_self"
+                      ><p>
+                        <span>Cost Guides</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/guides/" target="_self"
+                      ><p>
+                        <span>Project Guides</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/questions" target="_self"
+                      ><p>
+                        <span>Questions and Answers</span>
+                      </p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/app/" target="_self"
+                      ><p>
+                        <span>Get the App</span>
+                      </p></a
+                    >
+                  </li>
+                </ul>
+                <a class="seeAllLink" href="/more-services" target="_self">
+                  <span>See all</span>
+                  <svg
+                    class="h2 m_h1 black-300"
+                    height="18"
+                    width="18"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.764 14.646L16 9 9.725 3.311a1 1 0 00-1.482 1.342L11.75 8H3.002A1 1 0 103 10h8.75l-3.449 3.285c-.187.2-.301.435-.301.715a1 1 0 001 1c.306 0 .537-.151.764-.354z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -644,6 +629,7 @@
           </div>
         </template>
       </div>
+
       <nav
         class="nav-links-mobile"
         x-show="open"
@@ -677,11 +663,11 @@
             id="exploreMenuMobile"
             x-show="showExploreMenu"
             x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="-translate-y-full"
-            x-transition:enter-end="translate-y-0"
+            x-transition:enter-start="-translate-y-full opacity-0"
+            x-transition:enter-end="translate-y-0 opacity-100"
             x-transition:leave="transition ease-in duration-200"
-            x-transition:leave-start="translate-y-0"
-            x-transition:leave-end="-translate-y-full"
+            x-transition:leave-start="translate-y-0 opacity-100"
+            x-transition:leave-end="-translate-y-full opacity-0"
           ></div>
         </div>
         <a href="#">Join as a pro</a>
@@ -689,6 +675,20 @@
         <a href="#">Sign up</a>
         <a href="#">Login</a>
       </nav>
+
+      <div
+        id="exploreMenuDesktop"
+        class="bg-white relative"
+        x-show="showExploreMenu"
+        x-cloak
+        @click.outside="showExploreMenu = false"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="-translate-y-full opacity-0"
+        x-transition:enter-end="translate-y-0 opacity-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="translate-y-0 opacity-100"
+        x-transition:leave-end="-translate-y-full opacity-0"
+      ></div>
     </div>
 
     <div class="hero">

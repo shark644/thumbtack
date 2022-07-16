@@ -16,7 +16,7 @@
   }
 
   .nav-links-desktop {
-    @apply hidden md:flex ml-auto items-center;
+    @apply hidden md:flex ml-auto items-center z-40;
 
     button {
       @apply mr-4 text-sm;
@@ -41,18 +41,18 @@
     height: calc(100vh - $height);
 
     a {
-      @apply text-xl py-4 px-3 bg-white;
+      @apply text-xl py-4 px-3 bg-white z-10;
       font-family: "Mark bold", Avenir, Helvetica, Arial, sans-serif;
     }
   }
 
   #exploreMenuDesktop {
-    @apply hidden md:flex absolute top-0 w-screen left-0 -z-10 justify-center py-10 shadow-lg;
+    @apply hidden md:flex absolute top-0 w-screen left-0 justify-center z-40 py-10 shadow-lg bg-white;
     margin-top: $height;
   }
 
   .submenu {
-    @apply flex flex-col sm:flex-row flex-wrap px-6 gap-5 sm:gap-10 z-10;
+    @apply flex flex-col sm:flex-row flex-wrap px-6 gap-5 sm:gap-10 bg-white;
     .col {
       // @apply bg-red-200;
     }
