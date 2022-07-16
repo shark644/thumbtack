@@ -108,6 +108,7 @@
             class="tooltip"
             x-show="showTooltip"
             x-on:mouseenter="showTooltip = true"
+            x-cloak
           >
             <p>
               <span>
@@ -153,6 +154,7 @@
       <nav
         class="nav-links-mobile"
         x-show="open"
+        x-cloak
         x-transition:enter="transition ease-out duration-200"
         x-transition:enter-start="-translate-y-full"
         x-transition:enter-end="translate-y-0"
@@ -198,6 +200,7 @@
       <div
         id="exploreMenuDesktop"
         x-show="showExploreMenu"
+        x-cloak
         @click.outside="showExploreMenu = false"
         x-transition:enter="transition ease-out duration-200"
         x-transition:enter-start="-translate-y-full opacity-0"
