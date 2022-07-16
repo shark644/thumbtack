@@ -1,7 +1,7 @@
 @layer components {
   $height: 60px;
   .navbar {
-    @apply border-b bg-white border-gray-200 flex items-center px-3 z-50;
+    @apply border-b bg-white border-gray-200 flex items-center px-3 z-50 absolute top-0 left-0 right-0;
   }
   .brand {
     @apply hidden md:block;
@@ -19,11 +19,11 @@
     @apply hidden md:flex ml-auto items-center;
 
     button {
-      @apply mr-4;
+      @apply mr-4 text-sm;
     }
 
     a {
-      @apply text-base self-stretch flex items-center px-4 relative 
+      @apply text-sm self-stretch flex items-center px-4 relative 
       hover:after:content-[''] hover:after:w-full hover:after:border-grayish hover:after:border-b-2
       hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:opacity-40
       active:after:opacity-100 active:after:border-primary focus:after:opacity-100 focus:after:border-primary;
@@ -36,12 +36,12 @@
   }
 
   .nav-links-mobile {
-    @apply flex md:hidden flex-col absolute w-screen left-0 top-0 -z-40  bg-white;
+    @apply flex md:hidden flex-col absolute w-screen left-0 top-0 bg-white z-40;
     margin-top: $height;
     height: calc(100vh - $height);
 
     a {
-      @apply text-xl py-4 px-3 bg-white z-20;
+      @apply text-xl py-4 px-3 bg-white;
       font-family: "Mark bold", Avenir, Helvetica, Arial, sans-serif;
     }
   }
