@@ -689,6 +689,406 @@
         </div>
       </template>
     </div>
+
+    <div class="hero">
+      <div class="w-full relative z-10 flex items-center flex-grow">
+        <div class="px-4 lg:px-0 md:px-8 w-full md:w-3/4 lg:w-[552px] lg:ml-[128px]">
+          <div class="hidden md:block mb-5">
+            <svg class="fill-primary block" width="36" height="36" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0"></path>
+              <path
+                fill="#FFF"
+                d="M8.973 10.385a3.71 3.71 0 0 1-.564 1.957L8 13l-.409-.658a3.704 3.704 0 0 1-.564-1.957v-3.14C7.51 6.62 8.231 6.4 8.973 6.4v3.985zM4 5.69V4h8v1.69H4z"
+              ></path>
+            </svg>
+          </div>
+          <h1 class="hero-title">
+            Caring for your <br />
+            home, made easy.
+          </h1>
+          <div class="mb-4">
+            <div class="inline-block mr-6">
+              <button
+                class="p-0 border-none bg-transparent text-[18px] font-mark-bold text-primary"
+                type="button"
+              >
+                HIRE A PRO
+              </button>
+            </div>
+            <div class="inline-block mr-5">
+              <button
+                class="p-0 border-none bg-transparent text-[18px] font-mark-bold text-grayish"
+                type="button"
+              >
+                FIND CUSTOMERS
+              </button>
+            </div>
+          </div>
+          <div class="text-base md:hidden">
+            <form action="#" class="shadow-sm shadow-gray-300 flex rounded h-14">
+              <div
+                class="flex flex-1 border border-r-0 border-gray-200 rounded-sm rounded-r-none overflow-hidden"
+              >
+                <button type="button" class="outline-none w-full border-none p-0 bg-white">
+                  <span
+                    class="text-left border-none pl-4 pr-2 rounded-r-none rounded text-gray-600 flex"
+                    ><span class="truncate">
+                      <!-- -->What’s on your to-do list?<!-- -->
+                    </span></span
+                  >
+                </button>
+              </div>
+              <button
+                class="search-btn"
+                data-test="search-button"
+                aria-label="Search"
+                type="submit"
+              >
+                <span class="flex relative"
+                  ><span class="flex flex-column w-full"
+                    ><svg
+                      height="18"
+                      width="18"
+                      fill="currentColor"
+                      viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.5 2C10.532 2 13 4.467 13 7.5c0 1.156-.36 2.229-.972 3.114l3.679 3.679a.999.999 0 11-1.414 1.414l-3.68-3.679A5.46 5.46 0 017.5 13 5.506 5.506 0 012 7.5C2 4.467 4.468 2 7.5 2zm0 2C5.57 4 4 5.57 4 7.5S5.57 11 7.5 11 11 9.43 11 7.5 9.43 4 7.5 4z"
+                      ></path></svg></span
+                ></span>
+              </button>
+            </form>
+          </div>
+          <div class="hidden md:block">
+            <div class="relative w-full">
+              <form action="#" class="shadow shadow-gray-200 flex rounded h-[54px]" id="uniqueId4">
+                <div class="flex flex-1 border border-r-0 border-gray-300 rounded-sm rounded-l">
+                  <div class="flex flex-1 relative w-full">
+                    <input
+                      aria-label="Search on Thumbtack"
+                      class="flex-1 border-none outline-none pl-4 pr-2 rounded-r-none rounded overflow-hidden whitespace-nowrap text-ellipsis"
+                      value=""
+                      placeholder="What’s on your to-do list?"
+                    />
+                    <div
+                      class="shadow shadow-gray-200 -left-[1px] top-full z-20 hidden absolute overflow-hidden border border-gray-300 rounded border-t-0 w-full"
+                    >
+                      <ol tabindex="-1" class="outline-none bg-white hidden"></ol>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-[140px] flex relative before:content-[''] before:border before:border-gray-100 before:h-2/3 before:my-auto"
+                  >
+                    <div class="top-1/2 -translate-y-1/2 absolute left-2">
+                      <svg
+                        class="flex flex-shrink-0 fill-gray-300"
+                        height="18"
+                        width="18"
+                        fill="currentColor"
+                        viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <input
+                      name="zip_code"
+                      aria-label="Zip code"
+                      value=""
+                      class="pl-8 black w-full flex-1 outline-none border-none"
+                      placeholder="Zip code"
+                      pattern="[0-9]*"
+                      inputmode="numeric"
+                      maxlength="5"
+                      autocomplete="postal-code"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="search-btn"
+                  data-test="search-button"
+                  aria-label="Search"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="fixed top-0 left-0 right-0 w-full bg-white z-10 p-3 border-gray-300 border-b hidden md:block invisible opacity-0 -translate-y-[35px]"
+          style="transition: transform 0.2s ease, opacity 0.2s ease, visibility 0.2s ease"
+        >
+          <div class="hidden md:block max-w-lg mx-auto">
+            <div class="relative w-full">
+              <form action="#" class="shadow shadow-gray-200 flex rounded h-[54px]" id="uniqueId5">
+                <div class="rounded-l flex flex-1 relative bl bt border-b br-0 b-gray-300">
+                  <div class="flex flex-1 relative w-full">
+                    <input
+                      aria-label="Search on Thumbtack"
+                      class="flex-1 border-none pl3 pr2 br-left br2 truncate b"
+                      value=""
+                      data-test="search-input"
+                      placeholder="What’s on your to-do list?"
+                    />
+                    <div
+                      class="shadow shadow-gray-200 -left-[1px] top-full z-20 hidden absolute overflow-hidden ba b-gray-300 br2 border-t-0 w-full"
+                    >
+                      <ol
+                        tabindex="-1"
+                        class="outline-none bg-white hidden"
+                        data-test="api-search-dropdown"
+                      ></ol>
+                    </div>
+                  </div>
+                  <div class="basis-[140px] flex relative">
+                    <div class="top-1/2 -translate-y-1/2 absolute left-2">
+                      <svg
+                        class="flex flex-shrink-0 text-gray-300"
+                        height="18"
+                        width="18"
+                        fill="currentColor"
+                        viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <input
+                      name="zip_code"
+                      aria-label="Zip code"
+                      value=""
+                      class="pl-8 black w-full flex-1 border-none b"
+                      placeholder="Zip code"
+                      pattern="[0-9]*"
+                      inputmode="numeric"
+                      maxlength="5"
+                      autocomplete="postal-code"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="search-btn"
+                  data-test="search-button"
+                  aria-label="Search"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="z-0 bottom-0 right-0 absolute w-[33%] block md:hidden">
+        <picture class="block w-full overflow-hidden"
+          ><source
+            type="image/webp"
+            sizes="196px"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/120.webp   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/320.webp   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/400.webp   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/640.webp   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/768.webp   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1024.webp 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1366.webp 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1600.webp 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1920.webp 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/2200.webp 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/2350.webp 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/2560.webp 2560w
+            " />
+          <img
+            sizes="196px"
+            alt=""
+            fetchpriority="auto"
+            class="block w-full opacity-0 opacity-100"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/120.jpeg   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/320.jpeg   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/400.jpeg   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/640.jpeg   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/768.jpeg   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1024.jpeg 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1366.jpeg 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1600.jpeg 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1920.jpeg 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/2200.jpeg 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/2350.jpeg 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/2560.jpeg 2560w
+            "
+            src="https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1024.jpeg" /></picture
+        ><noscript
+          ><img
+            src="https://production-next-images-cdn.thumbtack.com/i/453080919956742145/width/1024.jpeg"
+            alt=""
+        /></noscript>
+      </div>
+      <div class="hero-img-md hidden md:block lg:hidden">
+        <picture class="block w-full"
+          ><source
+            type="image/webp"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/120.webp   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/320.webp   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/400.webp   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/640.webp   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/768.webp   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1024.webp 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1366.webp 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1600.webp 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1920.webp 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/2200.webp 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/2350.webp 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/2560.webp 2560w
+            " />
+          <img
+            sizes="0px"
+            alt=""
+            style="object-fit: cover; object-position: center; height: 100%"
+            fetchpriority="auto"
+            class="block w-full opacity-100"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/120.jpeg   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/320.jpeg   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/400.jpeg   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/640.jpeg   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/768.jpeg   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1024.jpeg 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1366.jpeg 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1600.jpeg 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1920.jpeg 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/2200.jpeg 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/2350.jpeg 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/2560.jpeg 2560w
+            "
+            src="https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1024.jpeg" /></picture
+        ><noscript
+          ><img
+            src="https://production-next-images-cdn.thumbtack.com/i/453080936540119042/width/1024.jpeg"
+            alt=""
+        /></noscript>
+      </div>
+      <div class="hero-img-lg hidden lg:block xl:hidden">
+        <picture class="block w-full overflow-hidden"
+          ><source
+            type="image/webp"
+            sizes="469px"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/120.webp   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/320.webp   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/400.webp   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/640.webp   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/768.webp   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1024.webp 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1366.webp 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1600.webp 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1920.webp 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/2200.webp 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/2350.webp 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/2560.webp 2560w
+            " />
+          <img
+            sizes="469px"
+            alt=""
+            fetchpriority="auto"
+            class="block w-full opacity-0 opacity-100"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/120.jpeg   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/320.jpeg   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/400.jpeg   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/640.jpeg   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/768.jpeg   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1024.jpeg 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1366.jpeg 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1600.jpeg 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1920.jpeg 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/2200.jpeg 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/2350.jpeg 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/2560.jpeg 2560w
+            "
+            src="https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1024.jpeg" /></picture
+        ><noscript
+          ><img
+            src="https://production-next-images-cdn.thumbtack.com/i/453080952111751169/width/1024.jpeg"
+            alt=""
+        /></noscript>
+      </div>
+      <div class="hero-img-xl hidden xl:block">
+        <picture class="block w-full overflow-hidden"
+          ><source
+            type="image/webp"
+            sizes="952px"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/120.webp   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/320.webp   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/400.webp   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/640.webp   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/768.webp   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1024.webp 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1366.webp 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1600.webp 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1920.webp 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/2200.webp 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/2350.webp 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/2560.webp 2560w
+            " />
+          <img
+            sizes="952px"
+            alt=""
+            fetchpriority="auto"
+            class="block w-full opacity-0 opacity-100"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/120.jpeg   120w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/320.jpeg   320w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/400.jpeg   400w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/640.jpeg   640w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/768.jpeg   768w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1024.jpeg 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1366.jpeg 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1600.jpeg 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1920.jpeg 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/2200.jpeg 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/2350.jpeg 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/2560.jpeg 2560w
+            "
+            src="https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1024.jpeg" /></picture
+        ><noscript
+          ><img
+            src="https://production-next-images-cdn.thumbtack.com/i/453230669278044172/width/1024.jpeg"
+            alt=""
+        /></noscript>
+      </div>
+      <div class="my-auto mb-16 z-10">
+        <button
+          class="inline-block p-0 m-0 bg-none border-none text-primary"
+          aria-label="Navigation arrow down"
+          type="button"
+        >
+          <div class="text-gray-800">
+            <svg
+              height="28"
+              width="28"
+              fill="currentColor"
+              viewBox="0 0 28 28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.354 16.764L14 25l7.689-8.275a1 1 0 00-1.342-1.482L15 20.75V4.002A1 1 0 1013 4v16.75l-5.285-5.449A1.026 1.026 0 007 15a1 1 0 00-1 1c0 .306.151.537.354.764z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

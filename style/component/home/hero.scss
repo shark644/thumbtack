@@ -1,0 +1,89 @@
+.hero {
+  @apply flex items-center flex-col relative overflow-hidden;
+  height: calc(100vh - 60px);
+
+  .hero-title {
+    @apply mb-7 text-[38px] md:text-[45px] lg:text-[50px] lg:leading-[52px] leading-none font-mark-heavy;
+  }
+
+  .hero-img-md {
+    -webkit-text-size-adjust: 100%;
+    color: #2f3033;
+    font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    --menu-drawer-height: 844px;
+    box-sizing: inherit;
+    right: 0 !important;
+    height: 100% !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    position: absolute !important;
+    z-index: 0 !important;
+    width: 33vh !important;
+  }
+  .hero-img-lg {
+    -webkit-text-size-adjust: 100%;
+    color: #2f3033;
+    font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    --menu-drawer-height: 844px;
+    box-sizing: inherit;
+    right: 0 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    position: absolute !important;
+    width: 40% !important;
+    z-index: 0 !important;
+  }
+  .hero-img-xl {
+    -webkit-text-size-adjust: 100%;
+    color: #2f3033;
+    font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    --menu-drawer-height: 941px;
+    box-sizing: inherit;
+    right: 0 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    position: absolute !important;
+    width: 50% !important;
+    z-index: 0 !important;
+  }
+
+  .search-btn {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    --menu-drawer-height: 941px;
+    text-transform: none;
+    -webkit-appearance: button;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    user-select: none;
+    border-radius: 4px;
+    overflow: visible;
+    background-color: theme("colors.primary");
+    border: 2px solid transparent;
+    color: #fff;
+    min-height: 0;
+    padding: 12px 20px;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    position: relative !important;
+  }
+}
