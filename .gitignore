@@ -25,3 +25,4 @@ dist-ssr
 .firebaserc
 .firebase/*
 .github/*
+dist/index.html
