@@ -65,14 +65,14 @@
     }
     li {
       writing-mode: horizontal-tb;
-      @apply mr-5;
+      @apply mr-16;
     }
     a {
-      @apply p-0 text-base cursor-pointer;
+      @apply p-0 text-sm cursor-pointer;
       font-family: "Mark", Avenir, Helvetica, Arial, sans-serif;
     }
     .seeAllLink {
-      @apply text-base font-bold flex items-center gap-1 mt-2;
+      @apply text-xs font-bold flex items-center gap-1 mt-0;
       svg {
         @apply fill-grayish;
       }
