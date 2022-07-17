@@ -1,0 +1,6 @@
+.top-notice-bar {
+  @apply flex items-center justify-between p-2 bg-white fixed top-0 left-0 right-0 shadow-md z-[51];
+  .close-btn-div {
+    @apply flex text-black p-2;
+  }
+}

@@ -1,0 +1,7 @@
+.appPoster {
+  @apply bg-white border-b border-gray-300 p-0;
+
+  picture {
+    @apply w-full max-h-full block max-w-[633px];
+  }
+}

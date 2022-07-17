@@ -5,16 +5,57 @@
 
 @import "./fonts";
 
+@import "./component/topNoticeBar";
 @import "./component/button";
 @import "./component/navbar";
 @import "./component/tooltip";
 @import "./component/home/hero";
+@import "./component/home/appPoster";
 
 body {
   font-family: "Mark", Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   @apply text-black;
 }
+
 [x-cloak] {
   display: none !important;
+}
+
+@layer utilities {
+  .only-sm {
+    @media (min-width: theme("screens.md")) {
+      display: none;
+    }
+  }
+  .only-md {
+    display: none;
+    @media (min-width: theme("screens.md")) {
+      display: block;
+    }
+    @media (min-width: theme("screens.lg")) {
+      display: none;
+    }
+  }
+  .only-lg {
+    display: none;
+    @media (min-width: theme("screens.lg")) {
+      display: block;
+    }
+    @media (min-width: theme("screens.xl")) {
+      display: none;
+    }
+  }
+  .only-after-lg {
+    display: none;
+    @media (min-width: theme("screens.lg")) {
+      display: block;
+    }
+  }
+  .only-after-xl {
+    display: none;
+    @media (min-width: theme("screens.xl")) {
+      display: block;
+    }
+  }
 }

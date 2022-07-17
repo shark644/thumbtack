@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html"],
+  important: true,
   theme: {
     fontFamily: {
       mark: "Mark, Avenir, Helvetica, Arial, sans-serif",
