@@ -1,7 +1,6 @@
 .hero {
-  @apply flex items-center flex-col relative overflow-hidden;
-  height: calc(100vh - 60px);
-
+  @apply flex items-center flex-col relative overflow-hidden xl:pt-16 border-b mb-5;
+  height: 100vh;
   .hero-title {
     @apply mb-7 text-[38px] md:text-[45px] lg:text-[50px] lg:leading-[52px] leading-none font-mark-heavy;
   }
