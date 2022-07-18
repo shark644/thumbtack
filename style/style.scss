@@ -12,6 +12,10 @@
 @import "./component/home/hero";
 @import "./component/home/appPoster";
 
+:root {
+  --container-max-w: 633px;
+}
+
 body {
   font-family: "Mark", Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;

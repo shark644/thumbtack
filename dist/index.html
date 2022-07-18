@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev: Thumbtack</title>
     <script type="module" crossorigin src="/assets/index.136b97e1.js"></script>
-    <link rel="stylesheet" href="/assets/index.36613446.css">
+    <link rel="stylesheet" href="/assets/index.dbd88268.css">
   </head>
   <body>
     <!-- Top notice for app installation -->
-    <div
-      class="flex items-center justify-between p-2 bg-white fixed top-0 left-0 right-0 shadow-md z-50"
-      x-data="{ open: false }"
-      x-show="open"
-      x-cloak
-      x-transition
-    >
-      <div class="flex text-black p-2">
+    <div class="top-notice-bar" x-data="{ open: true }" x-show="open" x-cloak x-transition>
+      <div class="close-btn-div">
         <button
           class="inline-block p-0 m-0 bg-none border-none cursor-pointer"
           aria-label="Close"
@@ -680,7 +674,6 @@
 
       <div
         id="exploreMenuDesktop"
-        class="bg-white relative"
         x-show="showExploreMenu"
         x-cloak
         @click.outside="showExploreMenu = false"
@@ -1074,6 +1067,7 @@
           class="inline-block p-0 m-0 bg-none border-none text-primary"
           aria-label="Navigation arrow down"
           type="button"
+          href="#app-poster"
         >
           <div class="text-gray-800">
             <svg
@@ -1089,6 +1083,253 @@
             </svg>
           </div>
         </button>
+      </div>
+    </div>
+
+    <div class="app-poster" id="app-poster">
+      <div class="mx-5 md:mx-10">
+        <div class="h-[700px] md:h-[500px] max-w-5xl mx-auto bg-white overflow-hidden">
+          <div class="flex flex-col md:flex-row h-full">
+            <div class="md:w-1/2 lg:w-1/3 md:flex items-center px-5 md:px-0">
+              <div class="mt-4 md:mt-0">
+                <div class="mb-3">
+                  <svg
+                    class="fill-primary block"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                  >
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0"></path>
+                    <path
+                      fill="#FFF"
+                      d="M8.973 10.385a3.71 3.71 0 0 1-.564 1.957L8 13l-.409-.658a3.704 3.704 0 0 1-.564-1.957v-3.14C7.51 6.62 8.231 6.4 8.973 6.4v3.985zM4 5.69V4h8v1.69H4z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2
+                  class="text-[28px] leading-8 md:text-[35px] md:leading-[37px] font-mark-bold md:font-mark-heavy mb-4 block p-0 m-0"
+                >
+                  Get the app.<br />
+                  Get things done.
+                </h2>
+                <p class="text-sm text-gray-500 mb-4">
+                  Compare prices, read reviews and book top-rated home pros — all in one free app.
+                </p>
+                <div class="flex">
+                  <a
+                    class="mr-2"
+                    aria-label="App Store Link"
+                    href="https://thumbtack.app.link/r9ssGJ9N9P?cookie_id=1eXejC52xpv4%2FM8rEglx4kmecqmUZXe0Ojeq9rh%2FRns%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <picture class="othwZHtu6y1cFRfKJWCTR _1mbbhnbCi13t4X2LFLw4l3">
+                      <img
+                        sizes="99px"
+                        alt=""
+                        fetchpriority="auto"
+                        class="block w-full"
+                        srcset="
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/120.png   120w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/320.png   320w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/400.png   400w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/640.png   640w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/768.png   768w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/1024.png 1024w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/1366.png 1366w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/1600.png 1600w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/1920.png 1920w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/2200.png 2200w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/2350.png 2350w,
+                          https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/2560.png 2560w
+                        "
+                        src="https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/120.png"
+                      />
+                    </picture>
+                    <noscript
+                      ><img
+                        src="https://production-next-images-cdn.thumbtack.com/i/362271910467772421/width/1024.png"
+                        alt="" /></noscript
+                  ></a>
+                  <a
+                    href="https://thumbtack.app.link/qq84i5mO9P?cookie_id=1eXejC52xpv4%2FM8rEglx4kmecqmUZXe0Ojeq9rh%2FRns%3D"
+                    target="_blank"
+                    aria-label="Google Play Store Link"
+                    rel="noopener noreferrer"
+                  >
+                    <picture class="othwZHtu6y1cFRfKJWCTR _9MdgpYutXUqEi7PTXeYLk"
+                      ><img
+                        sizes="113px"
+                        alt=""
+                        style=""
+                        fetchpriority="auto"
+                        class="block w-full"
+                        srcset="
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/120.png   120w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/320.png   320w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/400.png   400w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/640.png   640w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/768.png   768w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/1024.png 1024w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/1366.png 1366w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/1600.png 1600w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/1920.png 1920w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/2200.png 2200w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/2350.png 2350w,
+                          https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/2560.png 2560w
+                        "
+                        src="https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/120.png"
+                    /></picture>
+                    <noscript
+                      ><img
+                        src="https://production-next-images-cdn.thumbtack.com/i/362272018606170113/width/1024.png"
+                        alt="" /></noscript
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="md:w-1/2 lg:w-[66%] flex-auto flex items-end justify-center overflow-hidden"
+            >
+              <picture class="only-sm"
+                ><source
+                  type="image/webp"
+                  sizes="390px"
+                  srcset="
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/120.webp   120w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/320.webp   320w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/400.webp   400w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/640.webp   640w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/768.webp   768w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1024.webp 1024w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1366.webp 1366w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1600.webp 1600w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1920.webp 1920w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/2200.webp 2200w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/2350.webp 2350w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/2560.webp 2560w
+                  " />
+                <img
+                  sizes="390px"
+                  alt=""
+                  fetchpriority="auto"
+                  class="block w-full"
+                  srcset="
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/120.jpeg   120w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/320.jpeg   320w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/400.jpeg   400w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/640.jpeg   640w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/768.jpeg   768w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1024.jpeg 1024w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1366.jpeg 1366w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1600.jpeg 1600w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1920.jpeg 1920w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/2200.jpeg 2200w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/2350.jpeg 2350w,
+                    https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/2560.jpeg 2560w
+                  "
+                  src="https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/400.jpeg"
+              /></picture>
+              <noscript>
+                <img
+                  src="https://production-next-images-cdn.thumbtack.com/i/452726520920522758/width/1024.jpeg"
+                  alt=""
+                />
+              </noscript>
+
+              <picture class="only-md"
+                ><source
+                  type="image/webp"
+                  srcset="
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/120.webp   120w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/320.webp   320w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/400.webp   400w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/640.webp   640w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/768.webp   768w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1024.webp 1024w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1366.webp 1366w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1600.webp 1600w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1920.webp 1920w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/2200.webp 2200w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/2350.webp 2350w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/2560.webp 2560w
+                  " />
+                <img
+                  sizes="0px"
+                  alt=""
+                  fetchpriority="auto"
+                  class="block w-full"
+                  srcset="
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/120.jpeg   120w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/320.jpeg   320w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/400.jpeg   400w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/640.jpeg   640w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/768.jpeg   768w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1024.jpeg 1024w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1366.jpeg 1366w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1600.jpeg 1600w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1920.jpeg 1920w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/2200.jpeg 2200w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/2350.jpeg 2350w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/2560.jpeg 2560w
+                  "
+                  src="https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1024.jpeg"
+              /></picture>
+              <noscript
+                ><img
+                  src="https://production-next-images-cdn.thumbtack.com/i/452980611723493387/width/1024.jpeg"
+                  alt=""
+              /></noscript>
+
+              <picture class="only-after-lg"
+                ><source
+                  type="image/webp"
+                  sizes="631px"
+                  srcset="
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/120.webp   120w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/320.webp   320w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/400.webp   400w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/640.webp   640w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/768.webp   768w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1024.webp 1024w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1366.webp 1366w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1600.webp 1600w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1920.webp 1920w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/2200.webp 2200w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/2350.webp 2350w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/2560.webp 2560w
+                  " />
+                <img
+                  sizes="631px"
+                  alt=""
+                  fetchpriority="auto"
+                  class="block w-full"
+                  srcset="
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/120.jpeg   120w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/320.jpeg   320w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/400.jpeg   400w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/640.jpeg   640w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/768.jpeg   768w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1024.jpeg 1024w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1366.jpeg 1366w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1600.jpeg 1600w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1920.jpeg 1920w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/2200.jpeg 2200w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/2350.jpeg 2350w,
+                    https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/2560.jpeg 2560w
+                  "
+                  src="https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/640.jpeg"
+              /></picture>
+              <noscript
+                ><img
+                  src="https://production-next-images-cdn.thumbtack.com/i/452980571658100742/width/1024.jpeg"
+                  alt=""
+              /></noscript>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
