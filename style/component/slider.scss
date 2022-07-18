@@ -1,0 +1,13 @@
+@layer components {
+  .splide-card {
+    @apply flex flex-col items-center h-max w-full;
+
+    picture {
+      @apply block w-full rounded;
+    }
+  }
+
+  .splide-card-title {
+    @apply font-mark-bold line-clamp-2 text-left mt-1 w-full;
+  }
+}

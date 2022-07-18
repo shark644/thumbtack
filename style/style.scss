@@ -9,6 +9,8 @@
 @import "./component/button";
 @import "./component/navbar";
 @import "./component/tooltip";
+@import "./component/slider";
+
 @import "./component/home/hero";
 @import "./component/home/appPoster";
 
@@ -61,5 +63,13 @@ body {
     @media (min-width: theme("screens.xl")) {
       display: block;
     }
+  }
+
+  .container-max-w {
+    max-width: var(--container-max-w);
+  }
+
+  .section-title {
+    @apply font-mark-bold text-[22px] leading-[28px] md:text-[24px] md:leading-[32px] mb-4;
   }
 }
