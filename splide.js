@@ -6,7 +6,12 @@ new Splide("#exploreMoreProjects", {
   perPage: 3,
   gap: 16,
   classes: {
-    page: "hidden",
+    prev: "splide__arrow--prev splide-prev-btn",
+    next: "splide__arrow--next splide-next-btn",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination", // container
+    page: "splide__pagination__page hidden", // each button
   },
   breakpoints: {
     1024: {

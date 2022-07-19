@@ -11,3 +11,23 @@
     @apply font-mark-bold line-clamp-2 text-left mt-1 w-full;
   }
 }
+
+.splide-next-btn {
+  background-color: white !important;
+  opacity: 1 !important;
+  right: -1em !important;
+}
+
+.splide-next-btn[disabled] {
+  display: none !important;
+}
+
+.splide-prev-btn {
+  background-color: white !important;
+  opacity: 1 !important;
+  left: -1em !important;
+}
+
+.splide-prev-btn[disabled] {
+  display: none !important;
+}
