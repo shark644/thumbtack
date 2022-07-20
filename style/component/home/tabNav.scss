@@ -3,20 +3,20 @@
     @apply w-full;
 
     .nav-track {
-      @apply w-full flex gap-3 overflow-y-scroll hide-scrollbar;
+      @apply w-full flex gap-2 overflow-y-scroll hide-scrollbar;
 
       .nav-btn {
-        @apply text-lg font-mark-bold text-black min-w-max line-clamp-1;
+        @apply text-lg font-mark-bold text-black min-w-max line-clamp-1 pb-2;
       }
       .nav-btn:hover,
       .active {
         color: theme("colors.primary");
-        border-bottom: 2px solid theme("colors.primary");
+        border-bottom: 3px solid theme("colors.primary");
       }
     }
 
     .tab-nav-content {
-      @apply w-full flex flex-col gap-3 pt-5;
+      @apply w-full flex flex-col gap-2 pt-4;
     }
 
     .tab-nav-card-title {
