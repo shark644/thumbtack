@@ -1,9 +1,12 @@
 @layer components {
   .splide-card {
-    @apply flex flex-col items-center h-max w-full;
+    @apply flex flex-col items-center h-full w-full;
 
     picture {
-      @apply block w-full rounded;
+      @apply block w-full h-full border;
+      img {
+        @apply block w-full h-full rounded;
+      }
     }
   }
 

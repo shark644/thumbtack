@@ -1,7 +1,7 @@
 import "@splidejs/splide/css";
 import Splide from "@splidejs/splide";
 
-new Splide("#exploreMoreProjects", {
+const defaultOptions = {
   arrows: true,
   perPage: 3,
   gap: 16,
@@ -27,4 +27,7 @@ new Splide("#exploreMoreProjects", {
       },
     },
   },
-}).mount();
+};
+
+new Splide("#exploreMoreProjects", defaultOptions).mount();
+new Splide("#costGuidesSlider", defaultOptions).mount();
