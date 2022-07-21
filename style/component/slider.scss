@@ -19,6 +19,7 @@
   background-color: white !important;
   opacity: 1 !important;
   right: -1em !important;
+  @apply shadow-md;
 }
 
 .splide-next-btn[disabled] {
@@ -29,6 +30,7 @@
   background-color: white !important;
   opacity: 1 !important;
   left: -1em !important;
+  @apply shadow-md;
 }
 
 .splide-prev-btn[disabled] {

@@ -31,3 +31,4 @@ const defaultOptions = {
 
 new Splide("#exploreMoreProjects", defaultOptions).mount();
 new Splide("#costGuidesSlider", defaultOptions).mount();
+new Splide("#servicesSuggestionsSlider", defaultOptions).mount();
