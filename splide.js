@@ -34,3 +34,4 @@ new Splide("#exploreMoreProjects", defaultOptions).mount();
 new Splide("#costGuidesSlider", defaultOptions).mount();
 new Splide("#servicesSuggestionsSlider", defaultOptions).mount();
 new Splide("#servicesQuestionsSlider", defaultOptions).mount();
+new Splide("#projectGuidesSlider", defaultOptions).mount();
