@@ -4,6 +4,7 @@ import Splide from "@splidejs/splide";
 const defaultOptions = {
   arrows: true,
   perPage: 3,
+  perMove: 3,
   gap: 16,
   classes: {
     prev: "splide__arrow--prev splide-prev-btn",
@@ -32,3 +33,4 @@ const defaultOptions = {
 new Splide("#exploreMoreProjects", defaultOptions).mount();
 new Splide("#costGuidesSlider", defaultOptions).mount();
 new Splide("#servicesSuggestionsSlider", defaultOptions).mount();
+new Splide("#servicesQuestionsSlider", defaultOptions).mount();

@@ -1,6 +1,6 @@
 @layer components {
   .splide-card {
-    @apply flex flex-col items-center h-full w-full;
+    @apply flex flex-col items-stretch h-full w-full;
 
     picture {
       @apply block w-full h-full border;
@@ -13,12 +13,22 @@
   .splide-card-title {
     @apply font-mark-bold line-clamp-2 text-left mt-1 w-full;
   }
+
+  .splide-card-bottom {
+    @apply absolute top-full left-0 w-full;
+  }
+}
+
+.splide__track {
+  @apply overflow-y-auto pb-14;
 }
 
 .splide-next-btn {
   background-color: white !important;
   opacity: 1 !important;
   right: -1em !important;
+  // top: calc(50% - 0rem) !important;
+  //transform: translateY(25%) !important;
   @apply shadow-md;
 }
 
