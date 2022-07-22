@@ -1,0 +1,26 @@
+@layer components {
+  footer {
+    .footer-grid {
+      @apply grid sm:grid-cols-2 gap-y-8 md:grid-cols-4;
+    }
+    .section {
+      // @apply;
+    }
+    .section-title {
+      @apply text-sm pt-0 flex justify-between;
+    }
+
+    .section-links {
+      @apply text-sm flex flex-col gap-1;
+
+      li {
+        a {
+          @apply text-grayish;
+        }
+        a:hover {
+          @apply text-primary;
+        }
+      }
+    }
+  }
+}
