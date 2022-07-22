@@ -6,7 +6,6 @@
 @import "./fonts";
 
 @import "./component/topNoticeBar";
-@import "./component/button";
 @import "./component/navbar";
 @import "./component/tooltip";
 @import "./component/slider";
@@ -32,6 +31,10 @@ body {
 }
 
 @layer utilities {
+  .btn-primary {
+    @apply bg-primary text-white w-max text-base px-7 py-[0.6rem] rounded-[4px] whitespace-nowrap align-middle font-bold select-none;
+  }
+
   .only-sm {
     @media (min-width: theme("screens.md")) {
       display: none;
