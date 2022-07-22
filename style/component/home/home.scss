@@ -1,0 +1,18 @@
+@import "./hero";
+@import "./appPoster";
+@import "./tabNav";
+
+.review-section {
+  .review-card {
+    @apply font-mark text-xl md:text-[28px] leading-[32px];
+  }
+  .splide__pagination {
+    @apply justify-start pl-0;
+    .splide__pagination__page {
+      @apply bg-blue-300 w-3 h-3 mr-3;
+    }
+    .is-active {
+      @apply bg-primary;
+    }
+  }
+}
