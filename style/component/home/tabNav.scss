@@ -3,12 +3,14 @@
     @apply w-full;
 
     .nav-track {
-      @apply w-full flex gap-2 overflow-y-scroll hide-scrollbar;
+      @apply w-full flex gap-3 md:gap-5 overflow-y-scroll hide-scrollbar;
 
       .nav-btn {
         @apply text-lg font-mark-bold text-black min-w-max line-clamp-1 pb-2;
       }
-      .nav-btn:hover,
+      .nav-btn:hover {
+        color: theme("colors.primary");
+      }
       .active {
         color: theme("colors.primary");
         border-bottom: 3px solid theme("colors.primary");

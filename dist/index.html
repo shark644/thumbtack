@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev: Thumbtack</title>
     <script type="module" crossorigin src="/assets/index.70f760d8.js"></script>
-    <link rel="stylesheet" href="/assets/index.efae36ab.css">
+    <link rel="stylesheet" href="/assets/index.4574073b.css">
   </head>
   <body>
     <!-- Top notice for app installation -->
@@ -686,41 +686,53 @@
       ></div>
     </div>
 
-    <div class="hero">
+    <div
+      class="hero"
+      x-data="{state: {
+      hirePro: false,
+    }}"
+    >
       <div class="w-full relative z-10 flex items-center flex-grow">
         <div class="px-4 lg:px-0 md:px-8 w-full md:w-3/4 lg:w-[552px] lg:ml-[128px]">
-          <div class="hidden md:block mb-5">
-            <svg class="fill-primary block" width="36" height="36" viewBox="0 0 16 16">
-              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0"></path>
-              <path
-                fill="#FFF"
-                d="M8.973 10.385a3.71 3.71 0 0 1-.564 1.957L8 13l-.409-.658a3.704 3.704 0 0 1-.564-1.957v-3.14C7.51 6.62 8.231 6.4 8.973 6.4v3.985zM4 5.69V4h8v1.69H4z"
-              ></path>
-            </svg>
-          </div>
-          <h1 class="hero-title">
+          <template x-cloak x-if="state.hirePro">
+            <div class="hidden md:block mb-5">
+              <svg class="fill-primary block" width="36" height="36" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0"></path>
+                <path
+                  fill="#FFF"
+                  d="M8.973 10.385a3.71 3.71 0 0 1-.564 1.957L8 13l-.409-.658a3.704 3.704 0 0 1-.564-1.957v-3.14C7.51 6.62 8.231 6.4 8.973 6.4v3.985zM4 5.69V4h8v1.69H4z"
+                ></path>
+              </svg>
+            </div>
+          </template>
+          <h1 class="hero-title" x-cloak x-show="state.hirePro">
             Caring for your <br />
             home, made easy.
           </h1>
           <div class="mb-4">
             <div class="inline-block mr-6">
               <button
-                class="p-0 border-none bg-transparent text-[18px] font-mark-bold text-primary"
+                class="p-0 border-none bg-transparent text-[18px] font-mark-bold"
+                :class="state.hirePro ? 'text-primary' : 'text-grayish'"
                 type="button"
+                @click="state.hirePro = true"
               >
                 HIRE A PRO
               </button>
             </div>
             <div class="inline-block mr-5">
               <button
-                class="p-0 border-none bg-transparent text-[18px] font-mark-bold text-grayish"
+                class="p-0 border-none bg-transparent text-[18px] font-mark-bold"
+                :class="!state.hirePro ? 'text-primary' : 'text-grayish'"
                 type="button"
+                @click="state.hirePro = false"
               >
                 FIND CUSTOMERS
               </button>
             </div>
           </div>
-          <div class="text-base md:hidden">
+          <!-- On Mobile -->
+          <div class="text-base md:hidden" x-cloak x-show="state.hirePro">
             <form action="#" class="shadow-sm shadow-gray-300 flex rounded h-14">
               <div
                 class="flex flex-1 border border-r-0 border-gray-200 rounded-sm rounded-r-none overflow-hidden"
@@ -756,65 +768,85 @@
               </button>
             </form>
           </div>
-          <div class="hidden md:block">
-            <div class="relative w-full">
-              <form action="#" class="shadow shadow-gray-200 flex rounded h-[54px]" id="uniqueId4">
-                <div class="flex flex-1 border border-r-0 border-gray-300 rounded-sm rounded-l">
-                  <div class="flex flex-1 relative w-full">
-                    <input
-                      aria-label="Search on Thumbtack"
-                      class="flex-1 border-none outline-none pl-4 pr-2 rounded-r-none rounded overflow-hidden whitespace-nowrap text-ellipsis"
-                      value=""
-                      placeholder="What’s on your to-do list?"
-                    />
-                    <div
-                      class="shadow shadow-gray-200 -left-[1px] top-full z-20 hidden absolute overflow-hidden border border-gray-300 rounded border-t-0 w-full"
-                    >
-                      <ol tabindex="-1" class="outline-none bg-white hidden"></ol>
-                    </div>
-                  </div>
-                  <div
-                    class="basis-[140px] flex relative before:content-[''] before:border before:border-gray-100 before:h-2/3 before:my-auto"
-                  >
-                    <div class="top-1/2 -translate-y-1/2 absolute left-2">
-                      <svg
-                        class="flex flex-shrink-0 fill-gray-300"
-                        height="18"
-                        width="18"
-                        fill="currentColor"
-                        viewBox="0 0 18 18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <input
-                      name="zip_code"
-                      aria-label="Zip code"
-                      value=""
-                      class="pl-8 black w-full flex-1 outline-none border-none"
-                      placeholder="Zip code"
-                      pattern="[0-9]*"
-                      inputmode="numeric"
-                      maxlength="5"
-                      autocomplete="postal-code"
-                    />
-                  </div>
-                </div>
-                <button
-                  class="search-btn"
-                  data-test="search-button"
-                  aria-label="Search"
-                  type="submit"
+          <!-- On Desktop -->
+          <template x-cloak x-if="state.hirePro">
+            <div class="hidden md:block">
+              <div class="relative w-full">
+                <form
+                  action="#"
+                  class="shadow shadow-gray-200 flex rounded h-[54px]"
+                  id="uniqueId4"
                 >
-                  Search
-                </button>
-              </form>
+                  <div class="flex flex-1 border border-r-0 border-gray-300 rounded-sm rounded-l">
+                    <div class="flex flex-1 relative w-full">
+                      <input
+                        aria-label="Search on Thumbtack"
+                        class="flex-1 border-none outline-none pl-4 pr-2 rounded-r-none rounded overflow-hidden whitespace-nowrap text-ellipsis"
+                        value=""
+                        placeholder="What’s on your to-do list?"
+                      />
+                      <div
+                        class="shadow shadow-gray-200 -left-[1px] top-full z-20 hidden absolute overflow-hidden border border-gray-300 rounded border-t-0 w-full"
+                      >
+                        <ol tabindex="-1" class="outline-none bg-white hidden"></ol>
+                      </div>
+                    </div>
+                    <div
+                      class="basis-[140px] flex relative before:content-[''] before:border before:border-gray-100 before:h-2/3 before:my-auto"
+                    >
+                      <div class="top-1/2 -translate-y-1/2 absolute left-2">
+                        <svg
+                          class="flex flex-shrink-0 fill-gray-300"
+                          height="18"
+                          width="18"
+                          fill="currentColor"
+                          viewBox="0 0 18 18"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        name="zip_code"
+                        aria-label="Zip code"
+                        value=""
+                        class="pl-8 black w-full flex-1 outline-none border-none"
+                        placeholder="Zip code"
+                        pattern="[0-9]*"
+                        inputmode="numeric"
+                        maxlength="5"
+                        autocomplete="postal-code"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="search-btn"
+                    data-test="search-button"
+                    aria-label="Search"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
+          </template>
+
+          <template x-cloak x-if="!state.hirePro">
+            <div class="flex flex-col gap-5">
+              <h1
+                class="font-mark-bold text-[28px] leading-[32px] md:text-[40px] md:leading-[44px]"
+              >
+                Meet new customers in your area.
+              </h1>
+              <p>Sign up to start growing your business.</p>
+              <button class="btn-primary">Get started</button>
+            </div>
+          </template>
         </div>
+
         <div
           class="fixed top-0 left-0 right-0 w-full bg-white z-10 p-3 border-gray-300 border-b hidden md:block invisible opacity-0 -translate-y-[35px]"
           style="transition: transform 0.2s ease, opacity 0.2s ease, visibility 0.2s ease"
