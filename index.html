@@ -3111,15 +3111,19 @@
         <div class="text-base">
           <div class="py-5 md:py-14">
             <div class="footer-grid">
-              <div>
-                <div class="section">
-                  <div class="section-title">
+              <div
+                x-data="{open: window.innerWidth > 640}"
+                x-on:resize.window.debounce="open = window.innerWidth > 640"
+              >
+                <div class="section" :class="open ? '!pb-4' : '!pb-0'">
+                  <div class="section-title" @click="open = !open">
                     <div class="b black">
                       <div>Thumbtack</div>
                       <div>Consider it done.</div>
                     </div>
                     <div class="section-arrow flex items-center sm:hidden">
                       <svg
+                        :class="open ? 'rotate-180' : ''"
                         height="18"
                         width="18"
                         fill="currentColor"
@@ -3132,7 +3136,7 @@
                       </svg>
                     </div>
                   </div>
-                  <ul class="section-links">
+                  <ul class="section-links" x-cloak x-show="open">
                     <li>
                       <a
                         class="_230fLSlginFVu7q_SLOkRk _1Ct9lnM0pDObZs3Jh7I-Dx"
@@ -3242,15 +3246,19 @@
                   </ul>
                 </div>
               </div>
-              <div>
-                <div class="section">
-                  <div class="section-title">
+              <div
+                x-data="{open: window.innerWidth > 640}"
+                x-on:resize.window.debounce="open = window.innerWidth > 640"
+              >
+                <div class="section" :class="open ? '!pb-4' : '!pb-0'">
+                  <div class="section-title" @click="open = !open">
                     <div class="b black">
                       <div>Customers</div>
                       <div></div>
                     </div>
                     <div class="section-arrow flex items-center sm:hidden">
                       <svg
+                        :class="open ? 'rotate-180' : ''"
                         height="18"
                         width="18"
                         fill="currentColor"
@@ -3263,7 +3271,7 @@
                       </svg>
                     </div>
                   </div>
-                  <ul class="section-links">
+                  <ul class="section-links" x-cloak x-show="open">
                     <li>
                       <a
                         class="_230fLSlginFVu7q_SLOkRk _1Ct9lnM0pDObZs3Jh7I-Dx"
@@ -3340,15 +3348,19 @@
                 </div>
               </div>
 
-              <div>
-                <div class="section">
-                  <div class="section-title">
+              <div
+                x-data="{open: window.innerWidth > 640}"
+                x-on:resize.window.debounce="open = window.innerWidth > 640"
+              >
+                <div class="section" :class="open ? '!pb-4' : '!pb-0'">
+                  <div class="section-title" @click="open = !open">
                     <div class="b black">
                       <div>Pros</div>
                       <div></div>
                     </div>
                     <div class="section-arrow flex items-center sm:hidden">
                       <svg
+                        :class="open ? 'rotate-180' : ''"
                         height="18"
                         width="18"
                         fill="currentColor"
@@ -3361,7 +3373,7 @@
                       </svg>
                     </div>
                   </div>
-                  <ul class="section-links">
+                  <ul class="section-links" x-cloak x-show="open">
                     <li>
                       <a
                         class="_230fLSlginFVu7q_SLOkRk _1Ct9lnM0pDObZs3Jh7I-Dx"
@@ -3429,15 +3441,19 @@
                   </ul>
                 </div>
               </div>
-              <div>
-                <div class="section">
-                  <div class="section-title">
+              <div
+                x-data="{open: window.innerWidth > 640}"
+                x-on:resize.window.debounce="open = window.innerWidth > 640"
+              >
+                <div class="section" :class="open ? '!pb-4' : '!pb-0'">
+                  <div class="section-title" @click="open = !open">
                     <div class="b black">
                       <div>Support</div>
                       <div></div>
                     </div>
                     <div class="section-arrow flex items-center sm:hidden">
                       <svg
+                        :class="open ? 'rotate-180' : ''"
                         height="18"
                         width="18"
                         fill="currentColor"
@@ -3450,7 +3466,7 @@
                       </svg>
                     </div>
                   </div>
-                  <ul class="section-links">
+                  <ul class="section-links" x-cloak x-show="open">
                     <li>
                       <a
                         class="_230fLSlginFVu7q_SLOkRk _1Ct9lnM0pDObZs3Jh7I-Dx"

@@ -4,7 +4,7 @@
       @apply grid sm:grid-cols-2 gap-y-8 md:grid-cols-4;
     }
     .section {
-      // @apply;
+      @apply border-b sm:border-b-0;
     }
     .section-title {
       @apply text-sm pt-0 flex justify-between;

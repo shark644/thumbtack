@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev: Thumbtack</title>
     <script type="module" crossorigin src="/assets/index.70f760d8.js"></script>
-    <link rel="stylesheet" href="/assets/index.4574073b.css">
+    <link rel="stylesheet" href="/assets/index.17fed2d1.css">
   </head>
   <body>
     <!-- Top notice for app installation -->
@@ -689,7 +689,7 @@
     <div
       class="hero"
       x-data="{state: {
-      hirePro: false,
+      hirePro: true,
     }}"
     >
       <div class="w-full relative z-10 flex items-center flex-grow">
@@ -1588,37 +1588,118 @@
     </section>
 
     <!-- Services -->
-    <section class="page-section">
+    <section
+      class="page-section"
+      x-data="
+    {
+      currentTab: 0,
+      tabs: [
+        {
+          name: 'Home Maintenance',
+          tabIndex: 0
+        },
+        {
+          name: 'Home Remodeling',
+          tabIndex: 1
+        },
+      ],
+      data: [
+        {
+          topBox: {
+            title: `These annoying chores used to eat up your entire weekend. Not anymore.`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/120.jpeg   120w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/320.jpeg   320w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/400.jpeg   400w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/640.jpeg   640w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/768.jpeg   768w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1024.jpeg 1024w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1366.jpeg 1366w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1600.jpeg 1600w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1920.jpeg 1920w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2200.jpeg 2200w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2350.jpeg 2350w,https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2560.jpeg 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/400.jpeg`
+            }
+          },
+          bottomBox1: {
+            title: `House Cleaning`,
+            link: '#',
+            img: {
+              srcset:  `https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/120/aspect/8-5.jpeg 120w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/320/aspect/8-5.jpeg 320w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/400/aspect/8-5.jpeg 400w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/640/aspect/8-5.jpeg 640w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/768/aspect/8-5.jpeg 768w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1024/aspect/8-5.jpeg 1024w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1366/aspect/8-5.jpeg 1366w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1600/aspect/8-5.jpeg 1600w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1920/aspect/8-5.jpeg 1920w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2200/aspect/8-5.jpeg 2200w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2350/aspect/8-5.jpeg 2350w,https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2560/aspect/8-5.jpeg 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/320/aspect/8-5.jpeg`
+            }
+          },
+          bottomBox2: {
+            title: `Interior Painting`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/120/aspect/8-5.jpeg 120w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/320/aspect/8-5.jpeg 320w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/400/aspect/8-5.jpeg 400w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/640/aspect/8-5.jpeg 640w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/768/aspect/8-5.jpeg 768w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1024/aspect/8-5.jpeg 1024w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1366/aspect/8-5.jpeg 1366w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1600/aspect/8-5.jpeg 1600w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1920/aspect/8-5.jpeg 1920w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2200/aspect/8-5.jpeg 2200w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2350/aspect/8-5.jpeg 2350w,https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2560/aspect/8-5.jpeg 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/320/aspect/8-5.jpeg`
+            }
+          },
+          bottomBox3: {
+            title: `Handyman`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/120/aspect/8-5.jpeg 120w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/320/aspect/8-5.jpeg 320w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/400/aspect/8-5.jpeg 400w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/640/aspect/8-5.jpeg 640w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/768/aspect/8-5.jpeg 768w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1024/aspect/8-5.jpeg 1024w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1366/aspect/8-5.jpeg 1366w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1600/aspect/8-5.jpeg 1600w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1920/aspect/8-5.jpeg 1920w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2200/aspect/8-5.jpeg 2200w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2350/aspect/8-5.jpeg 2350w,https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2560/aspect/8-5.jpeg 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/320/aspect/8-5.jpeg`
+            }
+          }
+        },
+        {
+          topBox: {
+            title: `Find the pros you've always needed to create the rooms you've always wanted.`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/120.webp 120w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/320.webp 320w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/400.webp 400w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/640.webp 640w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/768.webp 768w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/1024.webp 1024w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/1366.webp 1366w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/1600.webp 1600w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/1920.webp 1920w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/2200.webp 2200w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/2350.webp 2350w,https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/2560.webp 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/372122882286919681/width/400.jpeg`
+            }
+          },
+          bottomBox1: {
+            title: `Tile Installation and Replacement`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/120/aspect/8-5.jpeg 120w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/320/aspect/8-5.jpeg 320w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/400/aspect/8-5.jpeg 400w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/640/aspect/8-5.jpeg 640w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/768/aspect/8-5.jpeg 768w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/1024/aspect/8-5.jpeg 1024w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/1366/aspect/8-5.jpeg 1366w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/1600/aspect/8-5.jpeg 1600w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/1920/aspect/8-5.jpeg 1920w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/2200/aspect/8-5.jpeg 2200w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/2350/aspect/8-5.jpeg 2350w,https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/2560/aspect/8-5.jpeg 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/372106012756992008/width/320/aspect/8-5.jpeg`
+            }
+          },
+          bottomBox2: {
+            title: `Floor Installation or Replacement`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/120/aspect/8-5.webp 120w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/320/aspect/8-5.webp 320w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/400/aspect/8-5.webp 400w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/640/aspect/8-5.webp 640w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/768/aspect/8-5.webp 768w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/1024/aspect/8-5.webp 1024w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/1366/aspect/8-5.webp 1366w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/1600/aspect/8-5.webp 1600w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/1920/aspect/8-5.webp 1920w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/2200/aspect/8-5.webp 2200w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/2350/aspect/8-5.webp 2350w,https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/2560/aspect/8-5.webp 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/372105998542716929/width/320/aspect/8-5.jpeg`
+            }
+          },
+          bottomBox3: {
+            title: `General Contracting`,
+            link: '#',
+            img: {
+              srcset: `https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/120/aspect/8-5.jpeg 120w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/320/aspect/8-5.jpeg 320w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/400/aspect/8-5.jpeg 400w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/640/aspect/8-5.jpeg 640w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/768/aspect/8-5.jpeg 768w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/1024/aspect/8-5.jpeg 1024w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/1366/aspect/8-5.jpeg 1366w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/1600/aspect/8-5.jpeg 1600w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/1920/aspect/8-5.jpeg 1920w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/2200/aspect/8-5.jpeg 2200w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/2350/aspect/8-5.jpeg 2350w,https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/2560/aspect/8-5.jpeg 2560w`,
+              src: `https://production-next-images-cdn.thumbtack.com/i/372536632829050891/width/1024/aspect/8-5.jpeg`
+            }
+          }
+        }
+      ],
+    }
+    "
+    >
       <div class="px-5 lg:px-0 max-w-screen-lg lg:mx-auto">
         <div class="tab-nav">
           <nav class="nav-track">
-            <button class="nav-btn active">Home Maintenance</button>
-            <button class="nav-btn">Home Remodeling</button>
-            <button class="nav-btn">Weddings</button>
-            <button class="nav-btn">Events</button>
-            <button class="nav-btn">More</button>
+            <template x-for="tab in tabs">
+              <button
+                class="nav-btn"
+                :class="tab.tabIndex === currentTab ? 'active' : ''"
+                x-text="tab.name"
+                @click="currentTab = tab.tabIndex"
+              ></button>
+            </template>
           </nav>
           <div class="tab-nav-content">
             <div class="w-full h-[250px] relative text-white">
-              <a href="#" target="_self" class="_2L8rAj1iw69LsaA-svO19e">
+              <a
+                :href="data[currentTab].topBox.link"
+                target="_self"
+                class="_2L8rAj1iw69LsaA-svO19e"
+              >
                 <picture>
                   <source
                     type="image/webp"
                     sizes="358px"
-                    srcset="
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/120.webp   120w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/320.webp   320w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/400.webp   400w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/640.webp   640w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/768.webp   768w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1024.webp 1024w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1366.webp 1366w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1600.webp 1600w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1920.webp 1920w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2200.webp 2200w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2350.webp 2350w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2560.webp 2560w
-                    "
+                    :srcset="data[currentTab].topBox.img.srcset"
                   />
                   <img
                     sizes="358px"
@@ -1626,28 +1707,11 @@
                     style="object-fit: cover; object-position: center; height: 100%"
                     fetchpriority="auto"
                     class="rounded"
-                    srcset="
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/120.jpeg   120w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/320.jpeg   320w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/400.jpeg   400w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/640.jpeg   640w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/768.jpeg   768w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1024.jpeg 1024w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1366.jpeg 1366w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1600.jpeg 1600w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1920.jpeg 1920w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2200.jpeg 2200w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2350.jpeg 2350w,
-                      https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/2560.jpeg 2560w
-                    "
-                    src="https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/400.jpeg"
+                    :src="data[currentTab].topBox.img.src"
                   />
                 </picture>
                 <noscript
-                  ><img
-                    src="https://production-next-images-cdn.thumbtack.com/i/322004415373295672/width/1024.jpeg"
-                    alt="Meta image"
-                  />
+                  ><img :src="data[currentTab].topBox.img.src" alt="Meta image" />
                 </noscript>
                 <div
                   class="absolute top-0 left-0 p-[16px] flex h-full"
@@ -1668,8 +1732,8 @@
                           ></path>
                         </svg>
                       </div>
-                      <div class="mb-4">
-                        These annoying chores used to eat up your entire weekend. Not anymore.
+                      <div class="mb-4" x-text="data[currentTab].topBox.title">
+                        <!-- These annoying chores used to eat up your entire weekend. Not anymore. -->
                       </div>
                       <p class="text-white text-xs">
                         See all
@@ -1682,49 +1746,23 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div class="w-full h-full">
-                <a href="/k/house-cleaning/near-me//" target="_self" class="">
+                <a :href="data[currentTab].bottomBox1.link" target="_self" class="">
                   <picture class="mb-2">
                     <source
                       type="image/webp"
                       sizes="171px"
-                      srcset="
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/120/aspect/8-5.webp   120w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/320/aspect/8-5.webp   320w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/400/aspect/8-5.webp   400w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/640/aspect/8-5.webp   640w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/768/aspect/8-5.webp   768w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1024/aspect/8-5.webp 1024w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1366/aspect/8-5.webp 1366w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1600/aspect/8-5.webp 1600w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1920/aspect/8-5.webp 1920w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2200/aspect/8-5.webp 2200w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2350/aspect/8-5.webp 2350w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2560/aspect/8-5.webp 2560w
-                      "
+                      :srcset="data[currentTab].bottomBox1.img.srcset"
                     />
                     <img
                       sizes="171px"
                       class="rounded w-full"
                       alt=""
                       fetchpriority="auto"
-                      srcset="
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/120/aspect/8-5.jpeg   120w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/320/aspect/8-5.jpeg   320w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/400/aspect/8-5.jpeg   400w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/640/aspect/8-5.jpeg   640w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/768/aspect/8-5.jpeg   768w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1024/aspect/8-5.jpeg 1024w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1366/aspect/8-5.jpeg 1366w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1600/aspect/8-5.jpeg 1600w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/1920/aspect/8-5.jpeg 1920w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2200/aspect/8-5.jpeg 2200w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2350/aspect/8-5.jpeg 2350w,
-                        https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/2560/aspect/8-5.jpeg 2560w
-                      "
-                      src="https://production-next-images-cdn.thumbtack.com/i/321403668121583653/width/320/aspect/8-5.jpeg"
+                      :srcset="data[currentTab].bottomBox1.img.srcset"
+                      :src="data[currentTab].bottomBox1.img.src"
                     />
                   </picture>
-                  <div class="tab-nav-card-title" title="House Cleaning">House Cleaning</div>
+                  <div class="tab-nav-card-title" x-text="data[currentTab].bottomBox1.title"></div>
                   <div class="flex items-center gap-1">
                     <svg
                       height="18"
@@ -1742,49 +1780,23 @@
                 </a>
               </div>
               <div class="w-full h-full">
-                <a href="/k/house-cleaning/near-me//" target="_self">
+                <a :href="data[currentTab].bottomBox2.link" target="_self">
                   <picture class="mb-2">
                     <source
                       type="image/webp"
                       sizes="171px"
-                      srcset="
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/120/aspect/8-5.webp   120w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/320/aspect/8-5.webp   320w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/400/aspect/8-5.webp   400w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/640/aspect/8-5.webp   640w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/768/aspect/8-5.webp   768w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1024/aspect/8-5.webp 1024w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1366/aspect/8-5.webp 1366w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1600/aspect/8-5.webp 1600w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1920/aspect/8-5.webp 1920w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2200/aspect/8-5.webp 2200w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2350/aspect/8-5.webp 2350w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2560/aspect/8-5.webp 2560w
-                      "
+                      :srcset="data[currentTab].bottomBox2.img.srcset"
                     />
                     <img
                       sizes="171px"
                       class="rounded w-full"
                       alt=""
                       fetchpriority="auto"
-                      srcset="
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/120/aspect/8-5.jpeg   120w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/320/aspect/8-5.jpeg   320w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/400/aspect/8-5.jpeg   400w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/640/aspect/8-5.jpeg   640w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/768/aspect/8-5.jpeg   768w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1024/aspect/8-5.jpeg 1024w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1366/aspect/8-5.jpeg 1366w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1600/aspect/8-5.jpeg 1600w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/1920/aspect/8-5.jpeg 1920w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2200/aspect/8-5.jpeg 2200w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2350/aspect/8-5.jpeg 2350w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/2560/aspect/8-5.jpeg 2560w
-                      "
-                      src="https://production-next-images-cdn.thumbtack.com/i/322004416188653800/width/320/aspect/8-5.jpeg"
+                      :srcset="data[currentTab].bottomBox2.img.srcset"
+                      :src="data[currentTab].bottomBox2.img.src"
                     />
                   </picture>
-                  <div class="tab-nav-card-title" title="House Cleaning">Interior Painting</div>
+                  <div class="tab-nav-card-title" x-text="data[currentTab].bottomBox2.title"></div>
                   <div class="flex items-center gap-1">
                     <svg
                       height="18"
@@ -1802,49 +1814,23 @@
                 </a>
               </div>
               <div class="w-full h-full hidden md:block">
-                <a href="/k/house-cleaning/near-me//" target="_self">
+                <a :href="data[currentTab].bottomBox3.link" target="_self">
                   <picture class="mb-2">
                     <source
                       type="image/webp"
                       sizes="171px"
-                      srcset="
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/120/aspect/8-5.webp   120w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/320/aspect/8-5.webp   320w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/400/aspect/8-5.webp   400w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/640/aspect/8-5.webp   640w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/768/aspect/8-5.webp   768w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1024/aspect/8-5.webp 1024w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1366/aspect/8-5.webp 1366w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1600/aspect/8-5.webp 1600w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1920/aspect/8-5.webp 1920w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2200/aspect/8-5.webp 2200w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2350/aspect/8-5.webp 2350w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2560/aspect/8-5.webp 2560w
-                      "
+                      :srcset="data[currentTab].bottomBox3.img.srcset"
                     />
                     <img
                       sizes="171px"
                       class="rounded w-full"
                       alt=""
                       fetchpriority="auto"
-                      srcset="
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/120/aspect/8-5.jpeg   120w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/320/aspect/8-5.jpeg   320w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/400/aspect/8-5.jpeg   400w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/640/aspect/8-5.jpeg   640w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/768/aspect/8-5.jpeg   768w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1024/aspect/8-5.jpeg 1024w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1366/aspect/8-5.jpeg 1366w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1600/aspect/8-5.jpeg 1600w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1920/aspect/8-5.jpeg 1920w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2200/aspect/8-5.jpeg 2200w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2350/aspect/8-5.jpeg 2350w,
-                        https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/2560/aspect/8-5.jpeg 2560w
-                      "
-                      src="https://production-next-images-cdn.thumbtack.com/i/322004416547373074/width/1024/aspect/8-5.jpeg"
+                      :srcset="data[currentTab].bottomBox3.img.srcset"
+                      :src="data[currentTab].bottomBox3.img.src"
                     />
                   </picture>
-                  <div class="tab-nav-card-title" title="House Cleaning">Handyman</div>
+                  <div class="tab-nav-card-title" x-text="data[currentTab].bottomBox3.title"></div>
                   <div class="flex items-center gap-1">
                     <svg
                       height="18"
