@@ -11,7 +11,9 @@
 @import "./component/slider";
 @import "./component/footer";
 
+// Pages
 @import "./component/home/home";
+@import "./component/membership/membership";
 
 :root {
   --container-max-w: 633px;
