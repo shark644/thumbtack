@@ -5,6 +5,8 @@
 
 @import "./fonts";
 
+$navHeight: 60px;
+
 @import "./component/topNoticeBar";
 @import "./component/navbar";
 @import "./component/tooltip";
@@ -24,6 +26,7 @@ body {
   font-family: "Mark", Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-size-adjust: 100%;
+  margin-top: $navHeight;
   -webkit-text-size-adjust: 100%;
 }
 
