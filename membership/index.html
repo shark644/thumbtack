@@ -46,7 +46,7 @@
           </svg>
         </button>
 
-        <div class="text-base ml-8 shadow-gray-200 shadow-sm">
+        <div class="text-base ml-4 shadow-gray-200 shadow-sm">
           <form action="#" class="flex rounded h-10">
             <div
               class="flex flex-1 border border-r-0 border-gray-200 rounded rounded-r-none overflow-hidden"
@@ -110,6 +110,7 @@
           <!-- class="active" will style the link in active state -->
           <a
             href="/membership/"
+            class="active"
             x-data="{showTooltip: false}"
             x-on:mouseenter="showTooltip = true"
             x-on:mouseleave="showTooltip = false"
@@ -672,6 +673,169 @@
         x-transition:leave-end="-translate-y-full opacity-0"
       ></div>
     </div>
+
+    <section class="w-full h-[77.5vh] relative">
+      <div class="w-section flex items-center h-full">
+        <div class="max-w-[400px]">
+          <h3 class="text-14 font-mark-bold text-primary">THUMBTACK PLUS</h3>
+          <h1 class="text-40 font-mark-bold mb-6">Care for your home with confidence.</h1>
+          <div class="p-6 bg-white border shadow rounded">
+            <span
+              class="bg-primary-100 text-14 font-mark-bold text-[#005979] rounded-full px-3 py-1"
+            >
+              Member-only benefits
+            </span>
+            <div class="my-6">
+              <ul class="flex flex-col gap-4 text-black text-base">
+                <li class="">
+                  <span class="flex items-start">
+                    <svg
+                      class="text-primary mr-4 mt-1 flex-shrink-0"
+                      height="14"
+                      width="14"
+                      fill="currentColor"
+                      viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.581 1.198c-.449-.341-1.075-.23-1.396.248L6.017 9.14 2.528 6.832c-.47-.31-1.086-.158-1.378.34-.29.5-.147 1.155.322 1.466L6.554 12l6.26-9.318c.321-.478.216-1.143-.233-1.484z"
+                      ></path>
+                    </svg>
+                    <span>
+                      <span>
+                        <span class="">$10,000 money-back guarantee. </span>
+                        <br />
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://help.thumbtack.com/article/thumbtack-plus-guarantee-terms"
+                        >
+                          <span class="underline text-primary">
+                            <span class="">Terms apply</span>
+                          </span>
+                        </a>
+                      </span>
+                    </span>
+                  </span>
+                </li>
+                <li class="">
+                  <span class="flex items-start"
+                    ><svg
+                      class="text-primary mr-4 mt-1 flex-shrink-0"
+                      height="14"
+                      width="14"
+                      fill="currentColor"
+                      viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.581 1.198c-.449-.341-1.075-.23-1.396.248L6.017 9.14 2.528 6.832c-.47-.31-1.086-.158-1.378.34-.29.5-.147 1.155.322 1.466L6.554 12l6.26-9.318c.321-.478.216-1.143-.233-1.484z"
+                      ></path></svg
+                    ><span
+                      ><span class="whitespace-pre-line"
+                        ><span class="font-mark-bold">20% off</span
+                        ><span class=""> on-demand bookings*.</span></span
+                      ></span
+                    ></span
+                  >
+                </li>
+                <li class="">
+                  <span class="flex items-start"
+                    ><svg
+                      class="text-primary mr-4 mt-1 flex-shrink-0"
+                      height="14"
+                      width="14"
+                      fill="currentColor"
+                      viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.581 1.198c-.449-.341-1.075-.23-1.396.248L6.017 9.14 2.528 6.832c-.47-.31-1.086-.158-1.378.34-.29.5-.147 1.155.322 1.466L6.554 12l6.26-9.318c.321-.478.216-1.143-.233-1.484z"
+                      ></path></svg
+                    ><span
+                      ><span class="whitespace-pre-line"
+                        ><span class="">Support from home specialists.</span></span
+                      ></span
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mb-2">
+              <span class="font-mark-bold text-[18px]">Just $49 a year</span>
+            </div>
+            <p class="mb-1">Pays for itself in 1.5 house cleanings.</p>
+            <p class="text-xs text-gray-600">Based on national average.</p>
+            <form class="mt-6 mb-2">
+              <div class="flex h-[50px]">
+                <input
+                  type="text"
+                  class="flex-1 border shadow border-r-0 outline-primary pl-3 align-middle h-auto bg-transparent rounded rounded-r-none w-full"
+                  placeholder="Zip code"
+                  value=""
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  maxlength="5"
+                />
+                <button
+                  type="submit"
+                  class="btn-primary rounded-l-none disabled:bg-primary-200"
+                  disabled
+                >
+                  Unlock benefits
+                </button>
+              </div>
+            </form>
+            <p class="text-xs text-gray-600">
+              We’ll use your zip code to personalize your membership.
+            </p>
+          </div>
+        </div>
+        <picture class="hidden md:block absolute top-0 right-0 bottom-0 overflow-hidden">
+          <source
+            type="image/webp"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/120.webp   120w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/320.webp   320w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/400.webp   400w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/640.webp   640w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/768.webp   768w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1024.webp 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1366.webp 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1600.webp 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1920.webp 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/2200.webp 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/2350.webp 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/2560.webp 2560w
+            "
+            sizes="100vw"
+          />
+          <img
+            sizes="100vw"
+            srcset="
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/120.jpeg   120w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/320.jpeg   320w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/400.jpeg   400w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/640.jpeg   640w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/768.jpeg   768w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1024.jpeg 1024w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1366.jpeg 1366w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1600.jpeg 1600w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1920.jpeg 1920w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/2200.jpeg 2200w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/2350.jpeg 2350w,
+              https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/2560.jpeg 2560w
+            "
+            src="https://production-next-images-cdn.thumbtack.com/i/426981606381527061/width/1920.jpeg"
+            height="728px"
+            alt=""
+            style="object-fit: contain; object-position: right"
+            fetchpriority="high"
+            class="block w-full h-full"
+          />
+        </picture>
+      </div>
+    </section>
 
     <script defer type="module" src="script.js"></script>
   </body>

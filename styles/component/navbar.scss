@@ -39,7 +39,7 @@
     height: $navHeight;
   }
   .active {
-    @apply after:content-[''] after:w-full after:border-primary after:border-b-2
+    @apply font-mark-bold after:content-[''] after:w-full after:border-primary after:border-b-2
       after:absolute after:bottom-0 after:left-0 hover:after:border-primary hover:after:opacity-100;
   }
 }

@@ -7,4 +7,13 @@ $navBarExpandAt: "screens.lg";
 @import "@component/tooltip";
 
 .membership {
+  .w-section {
+    @apply max-w-5xl mx-5 lg:mx-auto;
+  }
+  .text-40 {
+    @apply text-[40px] leading-[44px];
+  }
+  .text-14 {
+    @apply text-[14px] leading-[23px];
+  }
 }
