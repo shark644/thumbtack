@@ -5,17 +5,7 @@
 
 @import "./fonts";
 
-$navHeight: 60px;
-
-@import "./component/topNoticeBar";
-@import "./component/navbar";
-@import "./component/tooltip";
-@import "./component/slider";
-@import "./component/footer";
-
-// Pages
-@import "./component/home/home";
-@import "./component/membership/membership";
+// @import "@styles/baseConfig";
 
 :root {
   --container-max-w: 633px;
@@ -98,5 +88,36 @@ body {
 
   .pill-link {
     @apply h-[30px] px-[15px] rounded-2xl bg-[#e8f1fd] text-gray-800 text-xs font-mark-bold overflow-hidden flex items-center cursor-pointer;
+  }
+
+  .search-btn {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    --menu-drawer-height: 941px;
+    text-transform: none;
+    -webkit-appearance: button;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    user-select: none;
+    border-radius: 4px;
+    overflow: visible;
+    background-color: theme("colors.primary");
+    border: 2px solid transparent;
+    color: #fff;
+    min-height: 0;
+    padding: 12px 20px;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    position: relative !important;
   }
 }

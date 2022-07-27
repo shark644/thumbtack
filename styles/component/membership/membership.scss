@@ -1,0 +1,10 @@
+@import "@styles/baseConfig";
+
+$navBarExpandAt: "screens.lg";
+
+@import "@styles/baseStyles";
+@import "@component/navbar";
+@import "@component/tooltip";
+
+.membership {
+}

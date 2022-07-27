@@ -1,6 +1,5 @@
-import "@styles/component/home/home.scss";
+import "@styles/component/membership/membership.scss";
 import Alpine from "alpinejs";
-import "./splide";
 
 window.Alpine = Alpine;
 
