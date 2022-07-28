@@ -10,11 +10,20 @@ $navBarExpandAt: "screens.lg";
   .w-section {
     @apply max-w-5xl mx-5 lg:mx-auto;
   }
+  .page-section {
+    @apply border-b py-12 md:py-20;
+  }
   .text-40 {
     @apply text-[40px] leading-[44px];
   }
   .text-14 {
     @apply text-[14px] leading-[23px];
+  }
+  .text-24 {
+    @apply text-[24px] leading-[32px];
+  }
+  .text-32 {
+    @apply text-[32px] leading-[40px];
   }
 
   .error {
