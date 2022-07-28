@@ -674,7 +674,7 @@
       ></div>
     </div>
 
-    <section class="w-full h-[77.5vh] relative">
+    <section class="w-full h-[77.5vh] relative border-b">
       <div class="w-section flex items-center h-full">
         <div class="max-w-[400px]">
           <h3 class="text-14 font-mark-bold text-primary">THUMBTACK PLUS</h3>
@@ -766,7 +766,7 @@
             </div>
             <p class="mb-1">Pays for itself in 1.5 house cleanings.</p>
             <p class="text-xs text-gray-600">Based on national average.</p>
-            <form class="mt-6 mb-2">
+            <form class="mt-6 mb-2 error">
               <div class="flex h-[50px]">
                 <input
                   type="text"
@@ -777,14 +777,11 @@
                   pattern="[0-9]*"
                   maxlength="5"
                 />
-                <button
-                  type="submit"
-                  class="btn-primary rounded-l-none disabled:bg-primary-200"
-                  disabled
-                >
+                <button type="submit" class="btn-primary rounded-l-none disabled:bg-primary-200">
                   Unlock benefits
                 </button>
               </div>
+              <p class="text-[12px] mt-2 text-red-500">Please enter a valid zip code.</p>
             </form>
             <p class="text-xs text-gray-600">
               We’ll use your zip code to personalize your membership.

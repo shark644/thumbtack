@@ -16,4 +16,15 @@ $navBarExpandAt: "screens.lg";
   .text-14 {
     @apply text-[14px] leading-[23px];
   }
+
+  .error {
+    $danger: theme("colors.red.500");
+    input {
+      outline-color: $danger !important;
+      border-color: $danger !important;
+    }
+    input::placeholder {
+      color: $danger !important;
+    }
+  }
 }
