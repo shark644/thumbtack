@@ -3060,7 +3060,7 @@
     </section>
 
     <!-- Customer reviews -->
-    <section class="page-section review-section">
+    <section class="page-section review-section border-b-0">
       <div class="mx-5 max-w-screen-lg lg:mx-auto border-b-4 border-black pb-8 lg:pb-16">
         <h1 class="section-title lg:text-3xl mb-7">These reviews say it better.</h1>
         <section class="splide" id="customerReviewSlider" aria-label="Basic Structure Example">
@@ -3115,7 +3115,10 @@
                 x-data="{open: window.innerWidth > 640}"
                 x-on:resize.window.debounce="open = window.innerWidth > 640"
               >
-                <div class="section" :class="open ? '!pb-4' : '!pb-0'">
+                <div
+                  class="section border-t pt-3 sm:border-t-0 sm:pt-0"
+                  :class="open ? '!pb-4' : '!pb-0'"
+                >
                   <div class="section-title" @click="open = !open">
                     <div class="b black">
                       <div>Thumbtack</div>
@@ -3528,7 +3531,7 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row justify-between py-3 border-t">
+          <div class="flex flex-col sm:flex-row justify-between py-3 md:border-t">
             <a href="/" class="flex items-center mb-2 sm:mb-0">
               <div class="text-gray-300 mr-2 flex">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
