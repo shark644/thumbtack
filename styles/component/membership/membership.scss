@@ -36,4 +36,17 @@ $navBarExpandAt: "screens.lg";
       color: $danger !important;
     }
   }
+
+  .review-card {
+    @apply bg-primary-100 p-6 flex-1;
+    .stars {
+      @apply flex;
+    }
+    .description {
+      @apply text-base my-4 text-black;
+    }
+    .author {
+      @apply text-base font-mark-bold mt-3;
+    }
+  }
 }
