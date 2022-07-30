@@ -26,7 +26,7 @@ body {
 
 @layer utilities {
   .btn-primary {
-    @apply bg-primary text-white w-max text-base px-7 py-[0.6rem] rounded-[4px] whitespace-nowrap align-middle font-bold select-none;
+    @apply bg-primary text-white w-max text-base px-7 py-[0.6rem] rounded-[4px] whitespace-nowrap align-middle font-bold select-none cursor-pointer;
   }
 
   .only-sm {
@@ -63,6 +63,28 @@ body {
     @media (min-width: theme("screens.xl")) {
       display: block;
     }
+  }
+
+  .text-40 {
+    @apply text-[40px] leading-[44px];
+  }
+  .text-12 {
+    @apply text-[12px] leading-[18px];
+  }
+  .text-14 {
+    @apply text-[14px] leading-[23px];
+  }
+  .text-18 {
+    @apply text-[18px] leading-[24px];
+  }
+  .text-24 {
+    @apply text-[24px] leading-[32px];
+  }
+  .text-28 {
+    @apply text-[28px] leading-[32px];
+  }
+  .text-32 {
+    @apply text-[32px] leading-[40px];
   }
 
   .container-max-w {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
   </head>
-  <body>
+  <body class="register">
     <div x-data="{open: false, showExploreMenu: false }">
       <div class="navbar">
         <svg class="brand" width="120" height="17" viewBox="0 0 156 21" fill="currentColor">
@@ -611,6 +611,137 @@
         x-transition:leave-end="-translate-y-full opacity-0"
       ></div>
     </div>
+
+    <section>
+      <h1 class="text-24 md:text-32 font-mark-bold text-center py-10">Create your account</h1>
+      <div class="mx-auto max-w-xl p-10 border bg-white rounded">
+        <form class="grid grid-cols-2 gap-5">
+          <div class="form-control" :class="error ? 'error' : ''" x-data="{error: false}">
+            <label for="firstName">First Name</label>
+            <input class="default-input" type="text" name="firstName" />
+            <p class="error-text" x-cloak x-show="error">Please fill out this field.</p>
+          </div>
+          <div class="form-control" :class="error ? 'error' : ''" x-data="{error: false}">
+            <label for="lastName">Last Name</label>
+            <input class="default-input" type="text" name="lastName" />
+            <p class="error-text" x-cloak x-show="error">Please fill out this field.</p>
+          </div>
+
+          <div
+            class="form-control col-span-2"
+            :class="error ? 'error' : ''"
+            x-data="{error: false}"
+          >
+            <label for="email">Email</label>
+            <input class="default-input" type="email" name="email" />
+            <p class="error-text" x-cloak x-show="error">Please fill out this field.</p>
+          </div>
+          <div
+            class="form-control col-span-2"
+            :class="error ? 'error' : ''"
+            x-data="{error: false}"
+          >
+            <label for="password">Password</label>
+            <input class="default-input" type="password" name="password" />
+            <p class="error-text" x-cloak x-show="error">Please fill out this field.</p>
+          </div>
+
+          <div class="col-span-2 text-14 text-gray-500">
+            <div class="mb-5">
+              <span>Your password must:</span>
+              <ul class="list-disc ml-5 mt-1">
+                <li>be 8 to 72 characters long</li>
+                <li>not contain your name or email</li>
+                <li>
+                  not be commonly used, easily guessed or contain any variation of the word
+                  “Thumbtack”
+                </li>
+              </ul>
+            </div>
+            <p class="text-black">
+              By clicking Create Account, you agree to the
+              <a href="/terms/" target="_blank" class="underline text-primary">Terms of Use</a>
+              and
+              <a href="/privacy/" target="_blank" class="underline text-primary">Privacy Policy</a>.
+            </p>
+          </div>
+
+          <input type="submit" value="Create Account" class="btn-primary col-span-2 w-full h-12" />
+        </form>
+        <div class="w-full mt-5 flex items-center gap-3">
+          <hr class="border flex-1" />
+          <span class="text-gray-500">OR</span>
+          <hr class="border flex-1" />
+        </div>
+        <p class="text-14">
+          By clicking Sign up with Facebook or Sign up with Google, you agree to the
+          <a href="/terms/" target="_blank" class="underline text-primary">Terms of Use</a>
+          and
+          <a href="/privacy/" target="_blank" class="underline text-primary">Privacy Policy</a>.
+        </p>
+
+        <div class="my-1">
+          <button
+            class="vIRQFgYANCphKO9-RQaWv _2eWpUjwqkd3Pc7R5-BrPsX _20rw6psACTyqtM3mL6JeIu ArrQhpVb_OlUvvUB9kTXR _3v95mnMWYnUbb-L5J83b04"
+            type="button"
+          >
+            <span class="Fu-ioshlo_Bv6bF9AaQbF _1sx8ZG07stGhHdou557Djz"
+              ><svg
+                class="w2 h2 mr3"
+                height="28"
+                width="28"
+                fill="none"
+                viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26 14.073C26 7.406 20.627 2 14 2S2 7.406 2 14.073C2 20.098 6.388 25.093 12.125 26v-8.436H9.077v-3.491h3.048v-2.66c0-3.026 1.792-4.698 4.533-4.698 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.49 0-1.956.931-1.956 1.887v2.265h3.328l-.532 3.49h-2.796V26C21.612 25.095 26 20.1 26 14.073z"
+                  fill="#1977F3"
+                ></path></svg
+              >Sign up with Facebook</span
+            >
+          </button>
+        </div>
+        <div class="my1">
+          <button
+            class="vIRQFgYANCphKO9-RQaWv _2eWpUjwqkd3Pc7R5-BrPsX _20rw6psACTyqtM3mL6JeIu ArrQhpVb_OlUvvUB9kTXR _3v95mnMWYnUbb-L5J83b04"
+            type="button"
+          >
+            <span class="Fu-ioshlo_Bv6bF9AaQbF _1sx8ZG07stGhHdou557Djz"
+              ><svg
+                class="w2 h2 mr3"
+                height="28"
+                width="28"
+                fill="none"
+                viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.52 14.272c0-.85-.076-1.669-.218-2.454H14v4.641h6.458a5.52 5.52 0 01-2.394 3.622v3.011h3.878c2.269-2.089 3.578-5.165 3.578-8.82z"
+                  fill="#4285F4"
+                  fill-rule="evenodd"
+                ></path>
+                <path
+                  d="M14 26.001c3.24 0 5.956-1.074 7.942-2.907l-3.879-3.01c-1.074.72-2.449 1.145-4.063 1.145-3.126 0-5.771-2.111-6.715-4.948H3.276v3.11A11.995 11.995 0 0014 26z"
+                  fill="#34A853"
+                  fill-rule="evenodd"
+                ></path>
+                <path
+                  d="M7.285 16.281a7.213 7.213 0 01-.376-2.28c0-.79.136-1.56.376-2.28V8.612H3.276A11.996 11.996 0 002 14.002c0 1.935.464 3.768 1.276 5.388l4.01-3.109z"
+                  fill="#FBBC05"
+                  fill-rule="evenodd"
+                ></path>
+                <path
+                  d="M14 6.773c1.761 0 3.343.605 4.587 1.794l3.442-3.442C19.95 3.19 17.234 2 13.999 2 9.31 2 5.252 4.69 3.277 8.61l4.01 3.11C8.228 8.884 10.873 6.773 14 6.773z"
+                  fill="#EA4335"
+                  fill-rule="evenodd"
+                ></path></svg
+              >Sign up with Google</span
+            >
+          </button>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="mx-5 lg:mx-auto max-w-screen-lg">

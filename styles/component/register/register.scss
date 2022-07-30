@@ -8,4 +8,28 @@
 @import "@component/footer";
 
 .register {
+  @apply bg-gray-50;
+
+  .form-control {
+    @apply flex flex-col gap-1;
+    label {
+      @apply font-mark-bold;
+    }
+  }
+  .default-input {
+    @apply border h-12 rounded px-4 outline-primary;
+  }
+
+  .error {
+    label {
+      @apply text-red-500;
+    }
+    input {
+      @apply border-red-500;
+    }
+
+    .error-text {
+      @apply text-red-500 text-xs;
+    }
+  }
 }

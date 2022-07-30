@@ -14,27 +14,6 @@ $navBarExpandAt: "screens.lg";
   .page-section {
     @apply border-b py-12 md:py-20;
   }
-  .text-40 {
-    @apply text-[40px] leading-[44px];
-  }
-  .text-12 {
-    @apply text-[12px] leading-[18px];
-  }
-  .text-14 {
-    @apply text-[14px] leading-[23px];
-  }
-  .text-18 {
-    @apply text-[18px] leading-[24px];
-  }
-  .text-24 {
-    @apply text-[24px] leading-[32px];
-  }
-  .text-28 {
-    @apply text-[28px] leading-[32px];
-  }
-  .text-32 {
-    @apply text-[32px] leading-[40px];
-  }
 
   .error {
     $danger: theme("colors.red.500");
