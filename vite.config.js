@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: resolve(__DIR__, "index.html"),
         membership: resolve(__DIR__, "membership/index.html"),
+        register: resolve(__DIR__, "register/index.html"),
       },
     },
   },
