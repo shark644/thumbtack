@@ -614,14 +614,22 @@
 
     <section>
       <h1 class="text-24 md:text-32 font-mark-bold text-center py-10">Create your account</h1>
-      <div class="mx-auto max-w-xl p-10 border bg-white rounded">
+      <div class="mx-auto max-w-lg p-5 sm:p-10 sm:border sm:bg-white rounded">
         <form class="grid grid-cols-2 gap-5">
-          <div class="form-control" :class="error ? 'error' : ''" x-data="{error: false}">
+          <div
+            class="form-control col-span-2 lg:col-span-1"
+            :class="error ? 'error' : ''"
+            x-data="{error: false}"
+          >
             <label for="firstName">First Name</label>
             <input class="default-input" type="text" name="firstName" />
             <p class="error-text" x-cloak x-show="error">Please fill out this field.</p>
           </div>
-          <div class="form-control" :class="error ? 'error' : ''" x-data="{error: false}">
+          <div
+            class="form-control col-span-2 lg:col-span-1"
+            :class="error ? 'error' : ''"
+            x-data="{error: false}"
+          >
             <label for="lastName">Last Name</label>
             <input class="default-input" type="text" name="lastName" />
             <p class="error-text" x-cloak x-show="error">Please fill out this field.</p>
@@ -680,14 +688,11 @@
           <a href="/privacy/" target="_blank" class="underline text-primary">Privacy Policy</a>.
         </p>
 
-        <div class="my-1">
-          <button
-            class="vIRQFgYANCphKO9-RQaWv _2eWpUjwqkd3Pc7R5-BrPsX _20rw6psACTyqtM3mL6JeIu ArrQhpVb_OlUvvUB9kTXR _3v95mnMWYnUbb-L5J83b04"
-            type="button"
-          >
-            <span class="Fu-ioshlo_Bv6bF9AaQbF _1sx8ZG07stGhHdou557Djz"
-              ><svg
-                class="w2 h2 mr3"
+        <div class="mb-2 mt-5">
+          <button class="social-login-btn" type="button">
+            <span>
+              <svg
+                class="w-6 h-6"
                 height="28"
                 width="28"
                 fill="none"
@@ -697,19 +702,17 @@
                 <path
                   d="M26 14.073C26 7.406 20.627 2 14 2S2 7.406 2 14.073C2 20.098 6.388 25.093 12.125 26v-8.436H9.077v-3.491h3.048v-2.66c0-3.026 1.792-4.698 4.533-4.698 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.49 0-1.956.931-1.956 1.887v2.265h3.328l-.532 3.49h-2.796V26C21.612 25.095 26 20.1 26 14.073z"
                   fill="#1977F3"
-                ></path></svg
-              >Sign up with Facebook</span
-            >
+                ></path>
+              </svg>
+              Sign up with Facebook
+            </span>
           </button>
         </div>
-        <div class="my1">
-          <button
-            class="vIRQFgYANCphKO9-RQaWv _2eWpUjwqkd3Pc7R5-BrPsX _20rw6psACTyqtM3mL6JeIu ArrQhpVb_OlUvvUB9kTXR _3v95mnMWYnUbb-L5J83b04"
-            type="button"
-          >
-            <span class="Fu-ioshlo_Bv6bF9AaQbF _1sx8ZG07stGhHdou557Djz"
-              ><svg
-                class="w2 h2 mr3"
+        <div>
+          <button class="social-login-btn" type="button">
+            <span>
+              <svg
+                class="w-6 h-6"
                 height="28"
                 width="28"
                 fill="none"
@@ -735,16 +738,21 @@
                   d="M14 6.773c1.761 0 3.343.605 4.587 1.794l3.442-3.442C19.95 3.19 17.234 2 13.999 2 9.31 2 5.252 4.69 3.277 8.61l4.01 3.11C8.228 8.884 10.873 6.773 14 6.773z"
                   fill="#EA4335"
                   fill-rule="evenodd"
-                ></path></svg
-              >Sign up with Google</span
-            >
+                ></path>
+              </svg>
+              Sign up with Google
+            </span>
           </button>
         </div>
       </div>
+      <p class="text-center mb-16 md:mb-20 mt-7">
+        Already have an account?
+        <a href="/login/" class="text-primary">Log in.</a>
+      </p>
     </section>
 
     <footer>
-      <div class="mx-5 lg:mx-auto max-w-screen-lg">
+      <div class="mx-5 lg:mx-auto max-w-screen-lg lg:border-t">
         <div class="text-base">
           <div class="py-5 md:py-14">
             <div class="footer-grid">
