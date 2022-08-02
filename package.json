@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev --host": "vite --host",
+    "newpage": "node newpage",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "firebase deploy --only hosting"
