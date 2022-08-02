@@ -10,7 +10,7 @@
 ## NPM Scripts
 
 - `dev` - runs the vite development server
-- `newpage` - scaffold a new page with _navbar_ and _footer_
+- `newpage` - scaffolds a new page with _navbar_ and _footer_
 - `dev -- host` - runs and exposes the dev server to the external devices connected to the same network
 - `build` - builds the project and create the _dist_ folder
 - `preview` - starts the production server which serves the _dist_ folder

@@ -93,6 +93,9 @@ body {
   .container-max-w {
     max-width: var(--container-max-w);
   }
+  .default-input {
+    @apply border h-12 rounded px-4 outline-primary;
+  }
   .page-section {
     @apply border-b last:border-b-0 py-12 md:py-24;
   }
