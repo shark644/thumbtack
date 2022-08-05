@@ -1,6 +1,7 @@
 import "@styles/component/pro/pro.scss";
-  import Alpine from "alpinejs";
+import Alpine from "alpinejs";
+import "./splide";
 
-  window.Alpine = Alpine;
+window.Alpine = Alpine;
 
-  Alpine.start();
+Alpine.start();
