@@ -1,0 +1,36 @@
+@import "@styles/baseConfig";
+
+// $navBarExpandAt: "screens.lg";
+
+@import "@styles/baseStyles";
+@import "@component/navbar";
+@import "@component/tooltip";
+@import "@component/footer";
+
+.pro {
+  .table-cell {
+    @apply py-6 text-18 font-mark-bold text-black flex justify-center items-center text-center;
+  }
+  .red-cell {
+    @apply bg-[#fafafa];
+  }
+  .table-border-color {
+    border-color: #d3d4d5;
+  }
+  .first-col {
+    @apply border-r pl-16 text-left;
+    border-color: #d3d4d5;
+  }
+  .last-col {
+    @apply pr-16;
+  }
+  .thumb-icon {
+    @apply mx-auto;
+    &.up {
+      fill: #2db783;
+    }
+    &.down {
+      fill: #676d73;
+    }
+  }
+}

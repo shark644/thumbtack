@@ -13,6 +13,7 @@ export default defineConfig({
         membership: resolve(__DIR__, "membership/index.html"),
         register: resolve(__DIR__, "register/index.html"),
         login: resolve(__DIR__, "login/index.html"),
+        pro: resolve(__DIR__, "pro/index.html"),
         // DON'T REMOVE THIS COMMENT! IT IS USED BY newpage SCRIPT
       },
     },
