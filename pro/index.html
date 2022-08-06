@@ -7,6 +7,7 @@
     <title>pro</title>
   </head>
   <body class="pro">
+    <!-- Navbar -->
     <div x-data="{open: false, showExploreMenu: false }">
       <div class="navbar">
         <svg class="brand" width="120" height="17" viewBox="0 0 156 21" fill="currentColor">
@@ -612,19 +613,20 @@
       ></div>
     </div>
 
-    <section class="bg-gray-50 pt-16">
+    <!-- Hero -->
+    <section class="bg-gray-50 pt-16 relative">
       <div class="mx-auto max-w-5xl">
-        <div class="flex">
-          <div class="w-full max-w-lg z-10">
-            <h1 class="text-54 font-mark-bold">
+        <div class="flex pt-16">
+          <div class="w-full max-w-lg z-10 text-white md:text-black">
+            <h1 class="text-34 md:text-54 font-mark-bold px-5 md:px-0">
               Get jobs in <br />
               Miami.
             </h1>
-            <p>
+            <p class="hidden md:block">
               Over <span class="font-mark-bold text-grayish">30,000+</span> leads on Thumbtack per
               day.
             </p>
-            <div class="bg-white p-5 py-7 mt-5 shadow-400 rounded">
+            <div class="bg-white p-5 py-7 mt-5 md:shadow-400 rounded">
               <h5 class="font-mark-bold text-grayish mb-5">What service do you provide?</h5>
               <form class="flex flex-col gap-5">
                 <div
@@ -796,7 +798,32 @@
                 />
               </form>
             </div>
-            <div class="text-16 mt-5">
+            <div
+              class="md:hidden text-black bg-white w-full flex flex-col gap-4 justify-center items-center"
+            >
+              <span class="font-mark-bold text-grayish opacity-30">OR</span>
+              <div class="flex items-center gap-1 bg-white rounded-full shadow-400 px-5 py-1">
+                <svg
+                  class="di m_dn black-300"
+                  height="18"
+                  width="18"
+                  fill="currentColor"
+                  viewBox="0 0 18 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.48 9.616a2.287 2.287 0 00-3.231 0l-1.038 1.038a7.043 7.043 0 01-2.865-2.866L8.384 6.75a2.288 2.288 0 000-3.229L6.53 1.668a2.284 2.284 0 00-3.23 0l-.88.881a4.875 4.875 0 00-1.327 4.396c.972 4.985 4.975 8.99 9.96 9.962.318.062.637.092.953.092a4.862 4.862 0 003.444-1.42l.88-.88a2.284 2.284 0 000-3.23l-1.85-1.853zm-.444 4.55a2.883 2.883 0 01-2.598.778c-4.196-.819-7.564-4.187-8.382-8.382a2.88 2.88 0 01.778-2.599l.88-.88a.286.286 0 01.402 0l1.853 1.851a.285.285 0 010 .402L4.96 7.347l.258.62a9.04 9.04 0 004.817 4.815l.618.258 2.01-2.01a.283.283 0 01.402 0l1.853 1.853c.11.11.11.29 0 .401l-.881.881z"
+                  ></path>
+                </svg>
+                <p>
+                  <span>Contact us:</span>
+                  <a class="text-primary font-mark-bold" href="tel:18557386113" target="_self">
+                    +1 (855) 738-6113
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="text-16 mt-5 hidden md:block">
               <span>Contact us:</span>
               <a class="text-primary font-mark-bold" href="tel:18557386113" target="_self"
                 >+1 (855) 738-6113</a
@@ -807,7 +834,7 @@
               >
             </div>
           </div>
-          <div class="hidden md:block w-full -ml-12">
+          <div class="absolute top-0 md:static block w-full md:-ml-12">
             <picture class="othwZHtu6y1cFRfKJWCTR">
               <source
                 type="image/webp"
@@ -848,10 +875,13 @@
                 alt="Thumbtack Pros"
                 style="object-fit: cover; object-position: center top"
                 fetchpriority="high"
-                class="_3aRfIB1cDREblbN6_Nal56 nrquGklLq2uAECrJI5plY"
+                class="block w-full"
               />
             </picture>
           </div>
+          <div
+            class="md:hidden w-full h-3/4 absolute bottom-16 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent"
+          ></div>
           <!-- <div class="md:w-1/2 order-1 z-0 md:order-2">
             <div class="m_dn relative hidden">
               <div class="ceZDQRJbNAaRk3ZGuH3i3 absolute absolute-fill m_dn">
@@ -883,9 +913,11 @@
 
     <!-- Comparison table -->
     <section class="py-16 relative">
-      <div class="mx-auto max-w-5xl relative z-10">
-        <h1 class="font-mark-bold text-center text-40">See how Thumbtack is different.</h1>
-        <div class="grid grid-cols-3 my-10 gap-16">
+      <div class="mx-auto max-w-5xl px-5 md:px-0 relative z-10">
+        <h1 class="font-mark-bold md:text-center text-28 md:text-40">
+          See how Thumbtack is different.
+        </h1>
+        <div class="grid md:grid-cols-3 pl-5 md:pl-0 my-10 gap-10 md:gap-16">
           <div class="flex gap-5">
             <div class="min-w-max">
               <picture>
@@ -1000,18 +1032,20 @@
             </div>
           </div>
         </div>
-        <div class="shadow-400 bg-white rounded-xl pt-10 pb-0 lg:pb-10">
+        <div
+          class="shadow-400 w-full bg-white rounded-xl overflow-hidden pt-10 pb-0 lg:pb-10 table"
+        >
           <div class="grid grid-cols-3">
-            <div class="border-b border-[#d3d4d5] flex items-end pb-3 ml-16">
+            <div class="table-head justify-start ml-4 md:ml-16">
               <p class="uppercase text-grayish text-xs font-mark-bold">features</p>
             </div>
-            <div class="border-b table-border-color flex justify-center items-end pb-3">
+            <div class="table-head">
               <svg
                 width="120"
                 height="17"
                 viewBox="0 0 156 21"
                 fill="currentColor"
-                class="mb-[2px]"
+                class="mb-[2px] h-[10px] md:h-auto"
               >
                 <path
                   fill-rule="evenodd"
@@ -1019,8 +1053,11 @@
                 ></path>
               </svg>
             </div>
-            <div class="border-b table-border-color flex justify-center items-end pb-3 mr-16">
-              <h2 class="text-24 leading-none font-mark-bold text-grayish">Other Services</h2>
+            <div class="table-head mr-4 md:mr-16">
+              <h2 class="text-16 md:text-24 leading-none font-mark-bold text-grayish">
+                Other<span class="md:hidden">s</span>
+                <span class="hidden md:inline-block">Services</span>
+              </h2>
             </div>
             <!-- 1st row -->
             <div class="table-cell first-col red-cell">No entry or annual fees</div>
@@ -1213,7 +1250,7 @@
     <section>
       <div class="mx-auto max-w-5xl py-16">
         <h1 class="text-40 font-mark-bold text-center">The numbers tell the story.</h1>
-        <div class="flex justify-center gap-24 mt-12">
+        <div class="flex flex-col md:flex-row justify-center gap-24 mt-12">
           <div class="text-center max-w-[198px]">
             <h1 class="uppercase text-primary font-mark-bold text-32">8M</h1>
             <h3 class="text-24 font-mark-bold">job requests</h3>

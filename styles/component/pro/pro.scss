@@ -9,29 +9,32 @@
 @import "@component/slider";
 
 .pro {
-  .table-cell {
-    @apply bg-white py-6 text-18 font-mark-bold text-black flex justify-center items-center text-center;
-  }
-  .red-cell {
-    @apply bg-[#fafafa];
-  }
-  .table-border-color {
-    border-color: #d3d4d5;
-  }
-  .first-col {
-    @apply border-r pl-16 text-left;
-    border-color: #d3d4d5;
-  }
-  .last-col {
-    @apply pr-16;
-  }
-  .thumb-icon {
-    @apply mx-auto;
-    &.up {
-      fill: #2db783;
+  @apply overflow-x-hidden;
+  .table {
+    .table-head {
+      @apply border-b flex items-end pb-3 md:border-[#d3d4d5] justify-center;
     }
-    &.down {
-      fill: #676d73;
+    .table-cell {
+      @apply bg-white py-6 text-14 md:text-18 font-mark-bold text-black flex justify-center items-center text-center;
+    }
+    .red-cell {
+      @apply bg-[#fafafa];
+    }
+
+    .first-col {
+      @apply border-r px-4 md:pl-16 text-left md:border-[#d3d4d5];
+    }
+    .last-col {
+      @apply pr-4 md:pr-16;
+    }
+    .thumb-icon {
+      @apply mx-auto;
+      &.up {
+        fill: #2db783;
+      }
+      &.down {
+        fill: #676d73;
+      }
     }
   }
 
