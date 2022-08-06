@@ -45,4 +45,10 @@
       }
     }
   }
+
+  .app-store-btns {
+    picture {
+      @apply w-full max-h-full block max-w-[633px];
+    }
+  }
 }
