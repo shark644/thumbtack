@@ -23,9 +23,9 @@ const defaultOptions = {
       perPage: 1,
       arrows: false,
       drag: "free",
-      pagination: false,
+      pagination: true,
       padding: {
-        right: 80,
+        right: 0,
       },
     },
   },
