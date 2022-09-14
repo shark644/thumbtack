@@ -1,0 +1,19 @@
+@import "@styles/baseConfig";
+
+// $navBarExpandAt: "screens.lg";
+
+@import "@styles/baseStyles";
+@import "@component/navbar";
+@import "@component/tooltip";
+
+.instant_results {
+  .container {
+    @apply max-w-5xl mx-5 lg:mx-auto p-5;
+  }
+  .btn-pill {
+    @apply text-12 text-primary font-mark-bold border-2 py-2 px-5 rounded-full hover:border-primary focus:underline;
+  }
+  .btn-pill--active {
+    @apply bg-primary border-primary text-white;
+  }
+}

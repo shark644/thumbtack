@@ -119,18 +119,12 @@
           <!-- class="active" will style the link in active state -->
           <a
             href="/membership/"
-            class="active"
-            x-data="{showTooltip: false}"
-            x-on:mouseenter="showTooltip = true"
-            x-on:mouseleave="showTooltip = false"
+            class="active tooltip-wrapper"
           >
             <span> Membership </span>
             <div
               role="tooltip"
-              class="tooltip"
-              x-show="showTooltip"
-              x-on:mouseenter="showTooltip = true"
-              x-cloak
+              class="tooltip down"
             >
               <p>
                 <span>

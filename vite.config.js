@@ -14,6 +14,7 @@ export default defineConfig({
         register: resolve(__DIR__, "register/index.html"),
         login: resolve(__DIR__, "login/index.html"),
         pro: resolve(__DIR__, "pro/index.html"),
+        instant_results: resolve(__DIR__, "instant_results/index.html"),
         // DON'T REMOVE THIS COMMENT! IT IS USED BY newpage SCRIPT
       },
     },
