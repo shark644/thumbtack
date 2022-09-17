@@ -1,15 +1,21 @@
 .tooltip-wrapper {
-    --visibility: hidden;
-    position: relative;
-    display: inline-block;
+  --visibility: hidden;
+  position: relative;
+  display: inline-block;
 
-    &:hover {
-      --visibility: visible;
+  &:hover {
+    --visibility: visible;
+  }
+
+  .up {
+    @apply bottom-full h-max -translate-y-full -translate-x-1/4;
+    .up-arrow {
+      @apply rotate-180 top-full left-1/2 -translate-x-1/2;
     }
-    .down {
-      @apply absolute top-[100%] left-1/2 -translate-x-1/2;
-    }
-    
+  }
+  .down {
+    @apply top-full left-1/2 -translate-x-1/2;
+  }
 }
 .tooltip {
   visibility: var(--visibility);
@@ -30,7 +36,7 @@
   inset: 0px auto auto 0px;
   z-index: 60;
   // @apply absolute w-max top-full -left-1/2 mt-4;
-  @apply  w-max;
+  @apply w-max absolute;
   p {
     -webkit-text-size-adjust: 100%;
     font-family: Mark, Avenir, Helvetica, Arial, sans-serif;
@@ -54,7 +60,6 @@
       box-sizing: inherit;
     }
   }
-
 
   .up-arrow {
     -webkit-text-size-adjust: 100%;
@@ -84,4 +89,3 @@
     }
   }
 }
-
