@@ -39,4 +39,15 @@
       }
     }
   }
+
+  .related-categories {
+    @apply flex flex-wrap flex-col lg:flex-row justify-center gap-4 my-5;
+
+    .related-category {
+      @apply flex items-center justify-between py-2 lg:py-0 border-b lg:border-2 border-gray-300 lg:rounded font-mark-bold px-2 text-14 text-primary;
+      &__arrow {
+        @apply lg:hidden text-black;
+      }
+    }
+  }
 }
