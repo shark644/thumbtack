@@ -19,9 +19,15 @@
     @apply font-mark-bold text-14 my-2 flex items-center gap-1;
   }
   .filter__form-control {
-    @apply flex items-center gap-2 accent-primary my-2;
+    @apply flex items-center gap-2 accent-primary my-2 cursor-pointer;
     &--hidden {
       @apply hidden;
+    }
+    input {
+      @apply cursor-pointer;
+    }
+    label {
+      @apply cursor-pointer;
     }
   }
 

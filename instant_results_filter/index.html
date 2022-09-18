@@ -677,7 +677,7 @@
     <main class="border-b">
       <div class="flex">
         <!-- Filter panel  -->
-        <div class="flex-shrink border-r py-10 px-10 text-14">
+        <div class="hidden lg:block flex-shrink border-r py-10 px-10 text-14">
           <h2 class="font-mark-bold text-20 mb-5">Filters</h2>
           <div class="mb-5">
             <h3 class="filter__title flex gap-1">
@@ -702,7 +702,7 @@
                 </div>
               </span>
             </h3>
-            <div class="flex">
+            <div class="flex w-full">
               <input
                 class="px-5 text-14 outline-none rounded focus:border-primary border border-r-0"
                 type="text"
@@ -1050,505 +1050,503 @@
           </form>
         </div>
         <!-- Right panel -->
-        <div class="flex-1 max-w-lg md:max-w-2xl md:mx-auto py-10 mx-5 overflow-x-hidden">
-          <div class="flex items-center gap-1">
-            <h1 class="font-mark-bold text-18">Top 10 Movers based on our criteria</h1>
-            <div class="flex items-center tooltip-wrapper">
-              <button>
-                <svg
-                  height="18"
-                  width="18"
-                  fill="currentColor"
-                  viewBox="0 0 18 18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.247 13.248a6.008 6.008 0 000-8.49 6.008 6.008 0 00-8.488 0 6.008 6.008 0 000 8.49 6.008 6.008 0 008.488 0zm-9.903 1.414c-3.12-3.12-3.12-8.198 0-11.318 3.121-3.121 8.197-3.121 11.318 0 3.123 3.12 3.123 8.198 0 11.318a7.973 7.973 0 01-5.659 2.341c-2.05 0-4.098-.78-5.659-2.34zm6.37-7.94c-.37.375-1.051.375-1.42 0a1.021 1.021 0 01-.29-.708c0-.14.029-.263.08-.384.05-.132.119-.233.21-.334.1-.09.21-.172.329-.221a.96.96 0 01.38-.072c.27 0 .52.101.71.293.09.101.16.202.21.334a.98.98 0 01.08.384c0 .131-.03.263-.08.384s-.12.234-.21.324zm-.71 6.281a1 1 0 001-1v-3a1 1 0 10-2 0v3a1 1 0 001 1z"
-                  ></path>
-                </svg>
-              </button>
-              <div class="tooltip down mt-3 bg-black" role="tooltip">
-                <p class="text-white text-12 text-start">
-                  Our pros match your search, have reviews from real customers and pay for
-                  visibility on our site. <br />
-                  <a href="#" class="text-primary"> Learn more </a>
-                </p>
-                <div class="up-arrow up-arrow--black"></div>
+        <div class="flex-1">
+          <div class="max-w-lg md:max-w-2xl md:mx-auto py-10 mx-5 overflow-x-hidden">
+            <div class="flex items-center gap-1">
+              <h1 class="font-mark-bold text-18">Top 10 Movers based on our criteria</h1>
+              <div class="flex items-center tooltip-wrapper">
+                <button>
+                  <svg
+                    height="18"
+                    width="18"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.247 13.248a6.008 6.008 0 000-8.49 6.008 6.008 0 00-8.488 0 6.008 6.008 0 000 8.49 6.008 6.008 0 008.488 0zm-9.903 1.414c-3.12-3.12-3.12-8.198 0-11.318 3.121-3.121 8.197-3.121 11.318 0 3.123 3.12 3.123 8.198 0 11.318a7.973 7.973 0 01-5.659 2.341c-2.05 0-4.098-.78-5.659-2.34zm6.37-7.94c-.37.375-1.051.375-1.42 0a1.021 1.021 0 01-.29-.708c0-.14.029-.263.08-.384.05-.132.119-.233.21-.334.1-.09.21-.172.329-.221a.96.96 0 01.38-.072c.27 0 .52.101.71.293.09.101.16.202.21.334a.98.98 0 01.08.384c0 .131-.03.263-.08.384s-.12.234-.21.324zm-.71 6.281a1 1 0 001-1v-3a1 1 0 10-2 0v3a1 1 0 001 1z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="tooltip down mt-3 bg-black" role="tooltip">
+                  <p class="text-white text-12 text-start">
+                    Our pros match your search, have reviews from real customers and pay for
+                    visibility on our site. <br />
+                    <a href="#" class="text-primary"> Learn more </a>
+                  </p>
+                  <div class="up-arrow up-arrow--black"></div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Result List -->
-          <div class="my-5">
-            <!-- Result Card -->
-            <a class="result-card" href="#">
-              <div>
-                <div class="hidden md:block">
-                  <div style="width: 140px; height: 140px">
-                    <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
-                      <img
-                        sizes="140px"
-                        height="140px"
-                        alt="Avatar for Zip To Zip Moving"
-                        fetchpriority="auto"
-                        class="rounded"
-                        style="object-fit: cover; object-position: center center"
-                        src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
-                      />
-                    </picture>
+            <!-- Result List -->
+            <div class="my-5">
+              <!-- Result Card -->
+              <a class="result-card" href="#">
+                <div>
+                  <div class="hidden md:block">
+                    <div style="width: 140px; height: 140px">
+                      <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
+                        <img
+                          sizes="140px"
+                          height="140px"
+                          alt="Avatar for Zip To Zip Moving"
+                          fetchpriority="auto"
+                          class="rounded"
+                          style="object-fit: cover; object-position: center center"
+                          src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="md:hidden">
+                    <div
+                      class="_1oBNBNd2D3JdJdNP_RH3Ee _1XXeUA669qVvyfvikXAqzd"
+                      style="width: 72px; height: 72px"
+                    >
+                      <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
+                        <img
+                          sizes="72px"
+                          height="72px"
+                          alt="Avatar for Zip To Zip Moving"
+                          fetchpriority="auto"
+                          class="_3aRfIB1cDREblbN6_Nal56 nrquGklLq2uAECrJI5plY"
+                          style="object-fit: cover; object-position: center center"
+                          src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
+                        />
+                      </picture>
+                      <noscript></noscript>
+                    </div>
                   </div>
                 </div>
-                <div class="md:hidden">
-                  <div
-                    class="_1oBNBNd2D3JdJdNP_RH3Ee _1XXeUA669qVvyfvikXAqzd"
-                    style="width: 72px; height: 72px"
-                  >
-                    <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
-                      <img
-                        sizes="72px"
-                        height="72px"
-                        alt="Avatar for Zip To Zip Moving"
-                        fetchpriority="auto"
-                        class="_3aRfIB1cDREblbN6_Nal56 nrquGklLq2uAECrJI5plY"
-                        style="object-fit: cover; object-position: center center"
-                        src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
-                      />
-                    </picture>
-                    <noscript></noscript>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-1">
-                <h1 class="result-card__title">Zip To Zip Moving</h1>
-                <div class="flex items-center gap-2 text-14">
-                  <div class="flex items-center gap-2">
-                    <svg width="16" height="18">
-                      <defs>
-                        <path id="a" d="M0 .924h16V19H0z"></path>
-                      </defs>
-                      <g fill="none" fill-rule="evenodd">
-                        <g transform="translate(0 -.924)">
-                          <mask id="b" fill="#fff"><use xlink:href="#a"></use></mask>
+                <div class="flex-1">
+                  <h1 class="result-card__title">Zip To Zip Moving</h1>
+                  <div class="flex items-center gap-2 text-14">
+                    <div class="flex items-center gap-2">
+                      <svg width="16" height="18">
+                        <defs>
+                          <path id="a" d="M0 .924h16V19H0z"></path>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <g transform="translate(0 -.924)">
+                            <mask id="b" fill="#fff"><use xlink:href="#a"></use></mask>
+                            <path
+                              d="M16 13.492v-7.06a2 2 0 0 0-.99-1.727l-6-3.508a1.998 1.998 0 0 0-2.019 0l-6 3.508A2 2 0 0 0 0 6.431v7.061c0 .71.377 1.367.991 1.727l6 3.507a1.998 1.998 0 0 0 2.019 0l6-3.507c.613-.36.99-1.017.99-1.727"
+                              fill="#079ED8"
+                              mask="url(#b)"
+                            ></path>
+                          </g>
                           <path
-                            d="M16 13.492v-7.06a2 2 0 0 0-.99-1.727l-6-3.508a1.998 1.998 0 0 0-2.019 0l-6 3.508A2 2 0 0 0 0 6.431v7.061c0 .71.377 1.367.991 1.727l6 3.507a1.998 1.998 0 0 0 2.019 0l6-3.507c.613-.36.99-1.017.99-1.727"
-                            fill="#079ED8"
-                            mask="url(#b)"
+                            d="M14.849 3.687L9.134.346A2.248 2.248 0 0 0 8 .038v18a2.23 2.23 0 0 0 1.134-.309l5.715-3.34a2.35 2.35 0 0 0 1.15-2.031v-6.64a2.35 2.35 0 0 0-1.15-2.031"
+                            fill="#0DBAE3"
+                          ></path>
+                          <path
+                            d="M8.293 4.078l1.102 3.418 3.441.042c.297.004.42.4.182.584l-2.762 2.155 1.026 3.444c.088.296-.233.54-.474.36L8 11.996 5.192 14.08c-.241.18-.562-.065-.474-.36l1.026-3.445-2.762-2.154c-.237-.185-.115-.58.182-.584l3.441-.042 1.102-3.418a.305.305 0 0 1 .586 0z"
+                            fill="#FEBE14"
+                            fill-rule="nonzero"
                           ></path>
                         </g>
-                        <path
-                          d="M14.849 3.687L9.134.346A2.248 2.248 0 0 0 8 .038v18a2.23 2.23 0 0 0 1.134-.309l5.715-3.34a2.35 2.35 0 0 0 1.15-2.031v-6.64a2.35 2.35 0 0 0-1.15-2.031"
-                          fill="#0DBAE3"
-                        ></path>
-                        <path
-                          d="M8.293 4.078l1.102 3.418 3.441.042c.297.004.42.4.182.584l-2.762 2.155 1.026 3.444c.088.296-.233.54-.474.36L8 11.996 5.192 14.08c-.241.18-.562-.065-.474-.36l1.026-3.445-2.762-2.154c-.237-.185-.115-.58.182-.584l3.441-.042 1.102-3.418a.305.305 0 0 1 .586 0z"
-                          fill="#FEBE14"
-                          fill-rule="nonzero"
-                        ></path>
-                      </g>
-                    </svg>
-                    <span>Top Pro</span>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <span class="font-mark-bold text-green">Excellent 4.9</span>
-                    <div class="flex items-center" x-data="{stars: '*****'}">
-                      <template x-for="star in stars">
-                        <span class="w-4 h-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="24"
-                            fill="none"
-                          >
-                            <path
-                              d="M7.342.258l1.285 3.988 4.015.048c.346.005.489.466.212.682L9.633 7.49l1.196 4.018c.103.346-.271.631-.553.422L7 9.494l-3.276 2.434c-.281.21-.656-.076-.553-.421l1.196-4.018-3.22-2.513c-.278-.216-.135-.678.21-.682l4.016-.049L6.658.257a.356.356 0 0 1 .684 0z"
-                              class="fill-green"
-                            />
-                          </svg>
-                        </span>
-                      </template>
-                    </div>
-                    <span class="text-grayish">(157)</span>
-                  </div>
-                </div>
-                <p class="text-grayish text-14">
-                  Local Moving (under 50 miles), Long Distance Moving
-                </p>
-                <!-- Badges -->
-                <div class="flex flex-wrap gap-x-2 gap-y-3 my-2">
-                  <div class="tooltip-wrapper">
-                    <div class="result-card__badge">
-                      <svg
-                        height="14"
-                        width="14"
-                        fill="currentColor"
-                        viewBox="0 0 14 14"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8 6.143H6c-.552 0-1-.385-1-.857 0-.473.448-.857 1-.857h3c.553 0 1-.384 1-.858 0-.473-.447-.857-1-.857H8v-.857C8 1.384 7.553 1 7 1c-.553 0-1 .384-1 .857v.857c-1.654 0-3 1.154-3 2.572 0 1.417 1.346 2.571 3 2.571h2c.552 0 1 .385 1 .857 0 .473-.448.857-1 .857H4.5c-.553 0-1 .384-1 .858s.447.857 1 .857H6v.857c0 .474.447.857 1 .857.553 0 1-.383 1-.857v-.857c1.654 0 3-1.154 3-2.572 0-1.417-1.346-2.571-3-2.571z"
-                        ></path>
                       </svg>
-                      <span>Great value</span>
+                      <span class="min-w-max">Top Pro</span>
                     </div>
-                    <div class="tooltip up -mt-2 bg-black">
-                      <p>Here's a highly reviewed pro offering affordable prices</p>
-                      <div class="up-arrow up-arrow--black"></div>
-                    </div>
-                  </div>
-                  <div class="tooltip-wrapper">
-                    <div class="result-card__badge result-card__badge--purple">
-                      <svg
-                        height="14"
-                        width="14"
-                        fill="currentColor"
-                        viewBox="0 0 14 14"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.571 7.011c-.044 1.698-.515 3.345-3.571 4.416-3.056-1.07-3.526-2.717-3.571-4.395V4.62L7 2.698l3.571 1.922V7.01zM7 1L2 3.716v3.337c.055 2.055.649 4.521 4.787 5.878L7 13l.213-.069c4.138-1.357 4.732-3.823 4.787-5.9V3.718L7 1zM5.706 7.041a.52.52 0 00-.743.156.58.58 0 00.148.78l1.81 1.267 2.117-3.332a.583.583 0 00-.149-.78.522.522 0 00-.743.156L6.624 7.683l-.918-.642z"
-                        ></path>
-                      </svg>
-                      <span>Licensed pro</span>
-                    </div>
-                    <div class="tooltip bg-black up -mt-2">
-                      <p>Here's a highly reviewed pro offering affordable prices</p>
-                      <div class="up-arrow up-arrow--black"></div>
+                    <div class="flex items-center gap-1">
+                      <span class="font-mark-bold text-green min-w-max">4.9</span>
+                      <div class="flex items-center" x-data="{stars: '*****'}">
+                        <template x-for="star in stars">
+                          <span class="w-4 h-4">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7.342.258l1.285 3.988 4.015.048c.346.005.489.466.212.682L9.633 7.49l1.196 4.018c.103.346-.271.631-.553.422L7 9.494l-3.276 2.434c-.281.21-.656-.076-.553-.421l1.196-4.018-3.22-2.513c-.278-.216-.135-.678.21-.682l4.016-.049L6.658.257a.356.356 0 0 1 .684 0z"
+                                class="fill-green"
+                              />
+                            </svg>
+                          </span>
+                        </template>
+                      </div>
+                      <span class="text-grayish">(157)</span>
                     </div>
                   </div>
-                  <div class="tooltip-wrapper">
-                    <div class="result-card__badge result-card__badge--purple">
-                      <svg
-                        height="14"
-                        width="14"
-                        fill="currentColor"
-                        viewBox="0 0 14 14"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.665 8.853l-1.554-.778v-2.15l1.554-.777v3.705zm-3.11.486a.773.773 0 01-.772.772H3.104a.773.773 0 01-.771-.772V4.66c0-.426.346-.772.771-.772h4.679c.426 0 .772.346.772.772V9.34zm4.666-6.708l-3.157 1.578a2.33 2.33 0 00-2.281-1.875H3.104A2.33 2.33 0 00.777 4.66V9.34a2.33 2.33 0 002.327 2.328h4.679c1.128 0 2.07-.807 2.281-1.875l3.157 1.578V2.63z"
-                        ></path>
-                      </svg>
-                      <span>Offers remote services</span>
-                    </div>
-                    <div class="tooltip bg-black up -mt-2">
-                      <p>Here's a highly reviewed pro offering affordable prices</p>
-                      <div class="up-arrow up-arrow--black"></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Info -->
-                <div class="text-14">
-                  <div class="result-card__info">
-                    <svg
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.5 6.75a2.248 2.248 0 01-1.59 2.14c.053-.29.09-.585.09-.89V3.004h1.25a.25.25 0 01.25.25V6.75zM12 8c0 1.654-1.346 3-3 3S6 9.654 6 8V3h6v5zM2.5 6.75V3.246a.25.25 0 01.25-.25H4V8c0 .305.037.6.09.89A2.248 2.248 0 012.5 6.75zM15.25 1H2.75C1.785 1 1 1.785 1 2.75v4a3.75 3.75 0 003.692 3.744c.706 1.214 1.89 2.115 3.308 2.403V15H6a1 1 0 100 2h6a1 1 0 100-2h-2v-2.103c1.418-.288 2.603-1.189 3.308-2.403A3.75 3.75 0 0017 6.75v-4C17 1.785 16.215 1 15.25 1z"
-                      ></path>
-                    </svg>
-                    <span>261 hires on Thumbtack</span>
-                  </div>
-                  <!-- "result-card__info--important" doesn't get hidden on mobile -->
-                  <div class="result-card__info result-card__info--important">
-                    <svg
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
-                      ></path>
-                    </svg>
-                    <span>Serves North Bergen, NJ</span>
-                  </div>
-                  <div class="result-card__info">
-                    <svg
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 3h3c2.205 0 4 1.794 4 4s-1.795 4-4 4H6.761l-2.76 1.401V9.642l-.198-.266A3.95 3.95 0 013 7c0-2.206 1.795-4 4-4zm.24 10H10c3.31 0 6-2.691 6-6s-2.69-6-6-6H7C3.691 1 1 3.691 1 7c0 1.17.345 2.3 1 3.288v5.371L7.24 13zm9.504-.964a1 1 0 00-1.412-.078A7.978 7.978 0 0110 14H7.957a1 1 0 100 2H10a9.98 9.98 0 006.668-2.552 1 1 0 00.076-1.412z"
-                      ></path>
-                    </svg>
-                    <span>Responds in about <span class="font-mark-bold">2 hours</span></span>
-                  </div>
-                </div>
-                <!-- Online now badge -->
-                <div class="m-2 md:my-4 flex items-center gap-2 text-14">
-                  <span class="flex h-2 w-2 relative">
-                    <span
-                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-25"
-                    ></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green"></span>
-                  </span>
-                  <span class="text-grayish">Online now</span>
-                </div>
-                <p class="text-14 my-3 hidden md:block">
-                  Tobi O. says, "I will
-                  <span class="font-mark-bold">definitely recommend</span> them to anyone I...
-                  <span class="text-primary">See more</span>
-                </p>
-                <div class="text-14 md:hidden">
-                  <span class="font-mark-bold">$95/hour</span>
-                  <span class="text-grayish">estimated cost</span>
-                </div>
-              </div>
-              <div class="hidden md:flex flex-col justify-between items-end">
-                <div>
-                  <h1 class="text-black font-mark-bold">$95/hour</h1>
-                  <p class="text-grayish text-xs">estimated cost</p>
-                </div>
-                <button class="btn-primary text-14">View Profile</button>
-              </div>
-            </a>
-
-            <!-- Result Card -->
-            <a class="result-card" href="#">
-              <div>
-                <div class="hidden md:block">
-                  <div style="width: 140px; height: 140px">
-                    <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
-                      <img
-                        sizes="140px"
-                        height="140px"
-                        alt="Avatar for Zip To Zip Moving"
-                        fetchpriority="auto"
-                        class="rounded"
-                        style="object-fit: cover; object-position: center center"
-                        src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
-                      />
-                    </picture>
-                  </div>
-                </div>
-                <div class="md:hidden">
-                  <div
-                    class="_1oBNBNd2D3JdJdNP_RH3Ee _1XXeUA669qVvyfvikXAqzd"
-                    style="width: 72px; height: 72px"
-                  >
-                    <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
-                      <img
-                        sizes="72px"
-                        height="72px"
-                        alt="Avatar for Zip To Zip Moving"
-                        fetchpriority="auto"
-                        class="_3aRfIB1cDREblbN6_Nal56 nrquGklLq2uAECrJI5plY"
-                        style="object-fit: cover; object-position: center center"
-                        src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
-                      />
-                    </picture>
-                    <noscript></noscript>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-1">
-                <h1 class="result-card__title">Zip To Zip Moving</h1>
-                <div class="flex items-center gap-2 text-14">
-                  <div class="flex items-center gap-2">
-                    <svg width="16" height="18">
-                      <defs>
-                        <path id="a" d="M0 .924h16V19H0z"></path>
-                      </defs>
-                      <g fill="none" fill-rule="evenodd">
-                        <g transform="translate(0 -.924)">
-                          <mask id="b" fill="#fff"><use xlink:href="#a"></use></mask>
+                  <p class="text-grayish text-14">
+                    Local Moving (under 50 miles), Long Distance Moving
+                  </p>
+                  <!-- Badges -->
+                  <div class="flex flex-wrap gap-x-2 gap-y-3 my-2">
+                    <div class="tooltip-wrapper">
+                      <div class="result-card__badge">
+                        <svg
+                          height="14"
+                          width="14"
+                          fill="currentColor"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
                           <path
-                            d="M16 13.492v-7.06a2 2 0 0 0-.99-1.727l-6-3.508a1.998 1.998 0 0 0-2.019 0l-6 3.508A2 2 0 0 0 0 6.431v7.061c0 .71.377 1.367.991 1.727l6 3.507a1.998 1.998 0 0 0 2.019 0l6-3.507c.613-.36.99-1.017.99-1.727"
-                            fill="#079ED8"
-                            mask="url(#b)"
+                            d="M8 6.143H6c-.552 0-1-.385-1-.857 0-.473.448-.857 1-.857h3c.553 0 1-.384 1-.858 0-.473-.447-.857-1-.857H8v-.857C8 1.384 7.553 1 7 1c-.553 0-1 .384-1 .857v.857c-1.654 0-3 1.154-3 2.572 0 1.417 1.346 2.571 3 2.571h2c.552 0 1 .385 1 .857 0 .473-.448.857-1 .857H4.5c-.553 0-1 .384-1 .858s.447.857 1 .857H6v.857c0 .474.447.857 1 .857.553 0 1-.383 1-.857v-.857c1.654 0 3-1.154 3-2.572 0-1.417-1.346-2.571-3-2.571z"
+                          ></path>
+                        </svg>
+                        <span>Great value</span>
+                      </div>
+                      <div class="tooltip up -mt-2 bg-black">
+                        <p>Here's a highly reviewed pro offering affordable prices</p>
+                        <div class="up-arrow up-arrow--black"></div>
+                      </div>
+                    </div>
+                    <div class="tooltip-wrapper">
+                      <div class="result-card__badge result-card__badge--purple">
+                        <svg
+                          height="14"
+                          width="14"
+                          fill="currentColor"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.571 7.011c-.044 1.698-.515 3.345-3.571 4.416-3.056-1.07-3.526-2.717-3.571-4.395V4.62L7 2.698l3.571 1.922V7.01zM7 1L2 3.716v3.337c.055 2.055.649 4.521 4.787 5.878L7 13l.213-.069c4.138-1.357 4.732-3.823 4.787-5.9V3.718L7 1zM5.706 7.041a.52.52 0 00-.743.156.58.58 0 00.148.78l1.81 1.267 2.117-3.332a.583.583 0 00-.149-.78.522.522 0 00-.743.156L6.624 7.683l-.918-.642z"
+                          ></path>
+                        </svg>
+                        <span>Licensed pro</span>
+                      </div>
+                      <div class="tooltip bg-black up -mt-2">
+                        <p>Here's a highly reviewed pro offering affordable prices</p>
+                        <div class="up-arrow up-arrow--black"></div>
+                      </div>
+                    </div>
+                    <div class="tooltip-wrapper">
+                      <div class="result-card__badge result-card__badge--purple">
+                        <svg
+                          height="14"
+                          width="14"
+                          fill="currentColor"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.665 8.853l-1.554-.778v-2.15l1.554-.777v3.705zm-3.11.486a.773.773 0 01-.772.772H3.104a.773.773 0 01-.771-.772V4.66c0-.426.346-.772.771-.772h4.679c.426 0 .772.346.772.772V9.34zm4.666-6.708l-3.157 1.578a2.33 2.33 0 00-2.281-1.875H3.104A2.33 2.33 0 00.777 4.66V9.34a2.33 2.33 0 002.327 2.328h4.679c1.128 0 2.07-.807 2.281-1.875l3.157 1.578V2.63z"
+                          ></path>
+                        </svg>
+                        <span>Offers remote services</span>
+                      </div>
+                      <div class="tooltip bg-black up -mt-2">
+                        <p>Here's a highly reviewed pro offering affordable prices</p>
+                        <div class="up-arrow up-arrow--black"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Info -->
+                  <div class="text-14">
+                    <div class="result-card__info">
+                      <svg
+                        height="18"
+                        width="18"
+                        fill="currentColor"
+                        viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.5 6.75a2.248 2.248 0 01-1.59 2.14c.053-.29.09-.585.09-.89V3.004h1.25a.25.25 0 01.25.25V6.75zM12 8c0 1.654-1.346 3-3 3S6 9.654 6 8V3h6v5zM2.5 6.75V3.246a.25.25 0 01.25-.25H4V8c0 .305.037.6.09.89A2.248 2.248 0 012.5 6.75zM15.25 1H2.75C1.785 1 1 1.785 1 2.75v4a3.75 3.75 0 003.692 3.744c.706 1.214 1.89 2.115 3.308 2.403V15H6a1 1 0 100 2h6a1 1 0 100-2h-2v-2.103c1.418-.288 2.603-1.189 3.308-2.403A3.75 3.75 0 0017 6.75v-4C17 1.785 16.215 1 15.25 1z"
+                        ></path>
+                      </svg>
+                      <span>261 hires on Thumbtack</span>
+                    </div>
+                    <!-- "result-card__info--important" doesn't get hidden on mobile -->
+                    <div class="result-card__info result-card__info--important">
+                      <svg
+                        height="18"
+                        width="18"
+                        fill="currentColor"
+                        viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
+                        ></path>
+                      </svg>
+                      <span>Serves North Bergen, NJ</span>
+                    </div>
+                    <div class="result-card__info">
+                      <svg
+                        height="18"
+                        width="18"
+                        fill="currentColor"
+                        viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 3h3c2.205 0 4 1.794 4 4s-1.795 4-4 4H6.761l-2.76 1.401V9.642l-.198-.266A3.95 3.95 0 013 7c0-2.206 1.795-4 4-4zm.24 10H10c3.31 0 6-2.691 6-6s-2.69-6-6-6H7C3.691 1 1 3.691 1 7c0 1.17.345 2.3 1 3.288v5.371L7.24 13zm9.504-.964a1 1 0 00-1.412-.078A7.978 7.978 0 0110 14H7.957a1 1 0 100 2H10a9.98 9.98 0 006.668-2.552 1 1 0 00.076-1.412z"
+                        ></path>
+                      </svg>
+                      <span>Responds in about <span class="font-mark-bold">2 hours</span></span>
+                    </div>
+                  </div>
+                  <!-- Online now badge -->
+                  <div class="m-2 md:my-4 flex items-center gap-2 text-14">
+                    <span class="flex h-2 w-2 relative">
+                      <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-25"
+                      ></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green"></span>
+                    </span>
+                    <span class="text-grayish">Online now</span>
+                  </div>
+                  <p class="text-14 my-3 hidden md:block">
+                    Tobi O. says, "I will
+                    <span class="font-mark-bold">definitely recommend</span> them to anyone I...
+                    <span class="text-primary">See more</span>
+                  </p>
+                  <div class="text-14 md:hidden">
+                    <span class="font-mark-bold">$95/hour</span>
+                    <span class="text-grayish">estimated cost</span>
+                  </div>
+                </div>
+                <div class="hidden md:flex flex-col justify-between items-end">
+                  <button class="btn-primary text-16 py-4">View your fixed price</button>
+                </div>
+              </a>
+
+              <!-- Result Card -->
+              <a class="result-card" href="#">
+                <div>
+                  <div class="hidden md:block">
+                    <div style="width: 140px; height: 140px">
+                      <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
+                        <img
+                          sizes="140px"
+                          height="140px"
+                          alt="Avatar for Zip To Zip Moving"
+                          fetchpriority="auto"
+                          class="rounded"
+                          style="object-fit: cover; object-position: center center"
+                          src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="md:hidden">
+                    <div
+                      class="_1oBNBNd2D3JdJdNP_RH3Ee _1XXeUA669qVvyfvikXAqzd"
+                      style="width: 72px; height: 72px"
+                    >
+                      <picture class="othwZHtu6y1cFRfKJWCTR sVZAMdFFLvj9SXoNbsmuG">
+                        <img
+                          sizes="72px"
+                          height="72px"
+                          alt="Avatar for Zip To Zip Moving"
+                          fetchpriority="auto"
+                          class="_3aRfIB1cDREblbN6_Nal56 nrquGklLq2uAECrJI5plY"
+                          style="object-fit: cover; object-position: center center"
+                          src="https://production-next-images-cdn.thumbtack.com/i/447765856479092744/desktop/standard/400square-legacy"
+                        />
+                      </picture>
+                      <noscript></noscript>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h1 class="result-card__title">Zip To Zip Moving</h1>
+                  <div class="flex items-center gap-2 text-14">
+                    <div class="flex items-center gap-2">
+                      <svg width="16" height="18">
+                        <defs>
+                          <path id="a" d="M0 .924h16V19H0z"></path>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <g transform="translate(0 -.924)">
+                            <mask id="b" fill="#fff"><use xlink:href="#a"></use></mask>
+                            <path
+                              d="M16 13.492v-7.06a2 2 0 0 0-.99-1.727l-6-3.508a1.998 1.998 0 0 0-2.019 0l-6 3.508A2 2 0 0 0 0 6.431v7.061c0 .71.377 1.367.991 1.727l6 3.507a1.998 1.998 0 0 0 2.019 0l6-3.507c.613-.36.99-1.017.99-1.727"
+                              fill="#079ED8"
+                              mask="url(#b)"
+                            ></path>
+                          </g>
+                          <path
+                            d="M14.849 3.687L9.134.346A2.248 2.248 0 0 0 8 .038v18a2.23 2.23 0 0 0 1.134-.309l5.715-3.34a2.35 2.35 0 0 0 1.15-2.031v-6.64a2.35 2.35 0 0 0-1.15-2.031"
+                            fill="#0DBAE3"
+                          ></path>
+                          <path
+                            d="M8.293 4.078l1.102 3.418 3.441.042c.297.004.42.4.182.584l-2.762 2.155 1.026 3.444c.088.296-.233.54-.474.36L8 11.996 5.192 14.08c-.241.18-.562-.065-.474-.36l1.026-3.445-2.762-2.154c-.237-.185-.115-.58.182-.584l3.441-.042 1.102-3.418a.305.305 0 0 1 .586 0z"
+                            fill="#FEBE14"
+                            fill-rule="nonzero"
                           ></path>
                         </g>
-                        <path
-                          d="M14.849 3.687L9.134.346A2.248 2.248 0 0 0 8 .038v18a2.23 2.23 0 0 0 1.134-.309l5.715-3.34a2.35 2.35 0 0 0 1.15-2.031v-6.64a2.35 2.35 0 0 0-1.15-2.031"
-                          fill="#0DBAE3"
-                        ></path>
-                        <path
-                          d="M8.293 4.078l1.102 3.418 3.441.042c.297.004.42.4.182.584l-2.762 2.155 1.026 3.444c.088.296-.233.54-.474.36L8 11.996 5.192 14.08c-.241.18-.562-.065-.474-.36l1.026-3.445-2.762-2.154c-.237-.185-.115-.58.182-.584l3.441-.042 1.102-3.418a.305.305 0 0 1 .586 0z"
-                          fill="#FEBE14"
-                          fill-rule="nonzero"
-                        ></path>
-                      </g>
-                    </svg>
-                    <span>Top Pro</span>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <span class="font-mark-bold text-green">Excellent 4.9</span>
-                    <div class="flex items-center" x-data="{stars: '*****'}">
-                      <template x-for="star in stars">
-                        <span class="w-4 h-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="24"
-                            fill="none"
-                          >
-                            <path
-                              d="M7.342.258l1.285 3.988 4.015.048c.346.005.489.466.212.682L9.633 7.49l1.196 4.018c.103.346-.271.631-.553.422L7 9.494l-3.276 2.434c-.281.21-.656-.076-.553-.421l1.196-4.018-3.22-2.513c-.278-.216-.135-.678.21-.682l4.016-.049L6.658.257a.356.356 0 0 1 .684 0z"
-                              class="fill-green"
-                            />
-                          </svg>
-                        </span>
-                      </template>
+                      </svg>
+                      <span>Top Pro</span>
                     </div>
-                    <span class="text-grayish">(157)</span>
+                    <div class="flex items-center gap-1">
+                      <span class="font-mark-bold text-green">Excellent 4.9</span>
+                      <div class="flex items-center" x-data="{stars: '*****'}">
+                        <template x-for="star in stars">
+                          <span class="w-4 h-4">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7.342.258l1.285 3.988 4.015.048c.346.005.489.466.212.682L9.633 7.49l1.196 4.018c.103.346-.271.631-.553.422L7 9.494l-3.276 2.434c-.281.21-.656-.076-.553-.421l1.196-4.018-3.22-2.513c-.278-.216-.135-.678.21-.682l4.016-.049L6.658.257a.356.356 0 0 1 .684 0z"
+                                class="fill-green"
+                              />
+                            </svg>
+                          </span>
+                        </template>
+                      </div>
+                      <span class="text-grayish">(157)</span>
+                    </div>
                   </div>
-                </div>
-                <p class="text-grayish text-14">
-                  Local Moving (under 50 miles), Long Distance Moving
-                </p>
-                <!-- Badges -->
-                <div class="flex flex-wrap gap-x-2 gap-y-3 my-2">
-                  <div class="tooltip-wrapper">
-                    <div class="result-card__badge">
+                  <p class="text-grayish text-14">
+                    Local Moving (under 50 miles), Long Distance Moving
+                  </p>
+                  <!-- Badges -->
+                  <div class="flex flex-wrap gap-x-2 gap-y-3 my-2">
+                    <div class="tooltip-wrapper">
+                      <div class="result-card__badge">
+                        <svg
+                          height="14"
+                          width="14"
+                          fill="currentColor"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 6.143H6c-.552 0-1-.385-1-.857 0-.473.448-.857 1-.857h3c.553 0 1-.384 1-.858 0-.473-.447-.857-1-.857H8v-.857C8 1.384 7.553 1 7 1c-.553 0-1 .384-1 .857v.857c-1.654 0-3 1.154-3 2.572 0 1.417 1.346 2.571 3 2.571h2c.552 0 1 .385 1 .857 0 .473-.448.857-1 .857H4.5c-.553 0-1 .384-1 .858s.447.857 1 .857H6v.857c0 .474.447.857 1 .857.553 0 1-.383 1-.857v-.857c1.654 0 3-1.154 3-2.572 0-1.417-1.346-2.571-3-2.571z"
+                          ></path>
+                        </svg>
+                        <span>Great value</span>
+                      </div>
+                      <div class="tooltip up -mt-2 bg-black">
+                        <p>Here's a highly reviewed pro offering affordable prices</p>
+                        <div class="up-arrow up-arrow--black"></div>
+                      </div>
+                    </div>
+                    <div class="tooltip-wrapper">
+                      <div class="result-card__badge result-card__badge--purple">
+                        <svg
+                          height="14"
+                          width="14"
+                          fill="currentColor"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.571 7.011c-.044 1.698-.515 3.345-3.571 4.416-3.056-1.07-3.526-2.717-3.571-4.395V4.62L7 2.698l3.571 1.922V7.01zM7 1L2 3.716v3.337c.055 2.055.649 4.521 4.787 5.878L7 13l.213-.069c4.138-1.357 4.732-3.823 4.787-5.9V3.718L7 1zM5.706 7.041a.52.52 0 00-.743.156.58.58 0 00.148.78l1.81 1.267 2.117-3.332a.583.583 0 00-.149-.78.522.522 0 00-.743.156L6.624 7.683l-.918-.642z"
+                          ></path>
+                        </svg>
+                        <span>Licensed pro</span>
+                      </div>
+                      <div class="tooltip bg-black up -mt-2">
+                        <p>Here's a highly reviewed pro offering affordable prices</p>
+                        <div class="up-arrow up-arrow--black"></div>
+                      </div>
+                    </div>
+                    <div class="tooltip-wrapper">
+                      <div class="result-card__badge result-card__badge--purple">
+                        <svg
+                          height="14"
+                          width="14"
+                          fill="currentColor"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.665 8.853l-1.554-.778v-2.15l1.554-.777v3.705zm-3.11.486a.773.773 0 01-.772.772H3.104a.773.773 0 01-.771-.772V4.66c0-.426.346-.772.771-.772h4.679c.426 0 .772.346.772.772V9.34zm4.666-6.708l-3.157 1.578a2.33 2.33 0 00-2.281-1.875H3.104A2.33 2.33 0 00.777 4.66V9.34a2.33 2.33 0 002.327 2.328h4.679c1.128 0 2.07-.807 2.281-1.875l3.157 1.578V2.63z"
+                          ></path>
+                        </svg>
+                        <span>Offers remote services</span>
+                      </div>
+                      <div class="tooltip bg-black up -mt-2">
+                        <p>Here's a highly reviewed pro offering affordable prices</p>
+                        <div class="up-arrow up-arrow--black"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Info -->
+                  <div class="text-14">
+                    <div class="result-card__info">
                       <svg
-                        height="14"
-                        width="14"
+                        height="18"
+                        width="18"
                         fill="currentColor"
-                        viewBox="0 0 14 14"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M8 6.143H6c-.552 0-1-.385-1-.857 0-.473.448-.857 1-.857h3c.553 0 1-.384 1-.858 0-.473-.447-.857-1-.857H8v-.857C8 1.384 7.553 1 7 1c-.553 0-1 .384-1 .857v.857c-1.654 0-3 1.154-3 2.572 0 1.417 1.346 2.571 3 2.571h2c.552 0 1 .385 1 .857 0 .473-.448.857-1 .857H4.5c-.553 0-1 .384-1 .858s.447.857 1 .857H6v.857c0 .474.447.857 1 .857.553 0 1-.383 1-.857v-.857c1.654 0 3-1.154 3-2.572 0-1.417-1.346-2.571-3-2.571z"
+                          d="M15.5 6.75a2.248 2.248 0 01-1.59 2.14c.053-.29.09-.585.09-.89V3.004h1.25a.25.25 0 01.25.25V6.75zM12 8c0 1.654-1.346 3-3 3S6 9.654 6 8V3h6v5zM2.5 6.75V3.246a.25.25 0 01.25-.25H4V8c0 .305.037.6.09.89A2.248 2.248 0 012.5 6.75zM15.25 1H2.75C1.785 1 1 1.785 1 2.75v4a3.75 3.75 0 003.692 3.744c.706 1.214 1.89 2.115 3.308 2.403V15H6a1 1 0 100 2h6a1 1 0 100-2h-2v-2.103c1.418-.288 2.603-1.189 3.308-2.403A3.75 3.75 0 0017 6.75v-4C17 1.785 16.215 1 15.25 1z"
                         ></path>
                       </svg>
-                      <span>Great value</span>
+                      <span>261 hires on Thumbtack</span>
                     </div>
-                    <div class="tooltip up -mt-2 bg-black">
-                      <p>Here's a highly reviewed pro offering affordable prices</p>
-                      <div class="up-arrow up-arrow--black"></div>
-                    </div>
-                  </div>
-                  <div class="tooltip-wrapper">
-                    <div class="result-card__badge result-card__badge--purple">
+                    <!-- "result-card__info--important" doesn't get hidden on mobile -->
+                    <div class="result-card__info result-card__info--important">
                       <svg
-                        height="14"
-                        width="14"
+                        height="18"
+                        width="18"
                         fill="currentColor"
-                        viewBox="0 0 14 14"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M10.571 7.011c-.044 1.698-.515 3.345-3.571 4.416-3.056-1.07-3.526-2.717-3.571-4.395V4.62L7 2.698l3.571 1.922V7.01zM7 1L2 3.716v3.337c.055 2.055.649 4.521 4.787 5.878L7 13l.213-.069c4.138-1.357 4.732-3.823 4.787-5.9V3.718L7 1zM5.706 7.041a.52.52 0 00-.743.156.58.58 0 00.148.78l1.81 1.267 2.117-3.332a.583.583 0 00-.149-.78.522.522 0 00-.743.156L6.624 7.683l-.918-.642z"
+                          d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
                         ></path>
                       </svg>
-                      <span>Licensed pro</span>
+                      <span>Serves North Bergen, NJ</span>
                     </div>
-                    <div class="tooltip bg-black up -mt-2">
-                      <p>Here's a highly reviewed pro offering affordable prices</p>
-                      <div class="up-arrow up-arrow--black"></div>
-                    </div>
-                  </div>
-                  <div class="tooltip-wrapper">
-                    <div class="result-card__badge result-card__badge--purple">
+                    <div class="result-card__info">
                       <svg
-                        height="14"
-                        width="14"
+                        height="18"
+                        width="18"
                         fill="currentColor"
-                        viewBox="0 0 14 14"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M11.665 8.853l-1.554-.778v-2.15l1.554-.777v3.705zm-3.11.486a.773.773 0 01-.772.772H3.104a.773.773 0 01-.771-.772V4.66c0-.426.346-.772.771-.772h4.679c.426 0 .772.346.772.772V9.34zm4.666-6.708l-3.157 1.578a2.33 2.33 0 00-2.281-1.875H3.104A2.33 2.33 0 00.777 4.66V9.34a2.33 2.33 0 002.327 2.328h4.679c1.128 0 2.07-.807 2.281-1.875l3.157 1.578V2.63z"
+                          d="M7 3h3c2.205 0 4 1.794 4 4s-1.795 4-4 4H6.761l-2.76 1.401V9.642l-.198-.266A3.95 3.95 0 013 7c0-2.206 1.795-4 4-4zm.24 10H10c3.31 0 6-2.691 6-6s-2.69-6-6-6H7C3.691 1 1 3.691 1 7c0 1.17.345 2.3 1 3.288v5.371L7.24 13zm9.504-.964a1 1 0 00-1.412-.078A7.978 7.978 0 0110 14H7.957a1 1 0 100 2H10a9.98 9.98 0 006.668-2.552 1 1 0 00.076-1.412z"
                         ></path>
                       </svg>
-                      <span>Offers remote services</span>
-                    </div>
-                    <div class="tooltip bg-black up -mt-2">
-                      <p>Here's a highly reviewed pro offering affordable prices</p>
-                      <div class="up-arrow up-arrow--black"></div>
+                      <span>Responds in about <span class="font-mark-bold">2 hours</span></span>
                     </div>
                   </div>
-                </div>
-                <!-- Info -->
-                <div class="text-14">
-                  <div class="result-card__info">
-                    <svg
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.5 6.75a2.248 2.248 0 01-1.59 2.14c.053-.29.09-.585.09-.89V3.004h1.25a.25.25 0 01.25.25V6.75zM12 8c0 1.654-1.346 3-3 3S6 9.654 6 8V3h6v5zM2.5 6.75V3.246a.25.25 0 01.25-.25H4V8c0 .305.037.6.09.89A2.248 2.248 0 012.5 6.75zM15.25 1H2.75C1.785 1 1 1.785 1 2.75v4a3.75 3.75 0 003.692 3.744c.706 1.214 1.89 2.115 3.308 2.403V15H6a1 1 0 100 2h6a1 1 0 100-2h-2v-2.103c1.418-.288 2.603-1.189 3.308-2.403A3.75 3.75 0 0017 6.75v-4C17 1.785 16.215 1 15.25 1z"
-                      ></path>
-                    </svg>
-                    <span>261 hires on Thumbtack</span>
+                  <!-- Online now badge -->
+                  <div class="m-2 md:my-4 flex items-center gap-2 text-14">
+                    <span class="flex h-2 w-2 relative">
+                      <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-25"
+                      ></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green"></span>
+                    </span>
+                    <span class="text-grayish">Online now</span>
                   </div>
-                  <!-- "result-card__info--important" doesn't get hidden on mobile -->
-                  <div class="result-card__info result-card__info--important">
-                    <svg
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.002 7.25c0 3.248 4.342 7.756 5.23 8.825l.769.925.769-.926c.888-1.068 5.234-5.553 5.234-8.824C15.004 4.145 13 1 9.001 1c-3.999 0-6 3.145-6 6.25zm1.994 0C4.995 5.135 6.175 3 9 3s4.002 2.135 4.002 4.25c0 1.777-2.177 4.248-4.002 6.59C7.1 11.4 4.996 9.021 4.996 7.25zM8.909 5.5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"
-                      ></path>
-                    </svg>
-                    <span>Serves North Bergen, NJ</span>
-                  </div>
-                  <div class="result-card__info">
-                    <svg
-                      height="18"
-                      width="18"
-                      fill="currentColor"
-                      viewBox="0 0 18 18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 3h3c2.205 0 4 1.794 4 4s-1.795 4-4 4H6.761l-2.76 1.401V9.642l-.198-.266A3.95 3.95 0 013 7c0-2.206 1.795-4 4-4zm.24 10H10c3.31 0 6-2.691 6-6s-2.69-6-6-6H7C3.691 1 1 3.691 1 7c0 1.17.345 2.3 1 3.288v5.371L7.24 13zm9.504-.964a1 1 0 00-1.412-.078A7.978 7.978 0 0110 14H7.957a1 1 0 100 2H10a9.98 9.98 0 006.668-2.552 1 1 0 00.076-1.412z"
-                      ></path>
-                    </svg>
-                    <span>Responds in about <span class="font-mark-bold">2 hours</span></span>
+                  <p class="text-14 my-3 hidden md:block">
+                    Tobi O. says, "I will
+                    <span class="font-mark-bold">definitely recommend</span> them to anyone I...
+                    <span class="text-primary">See more</span>
+                  </p>
+                  <div class="text-14 md:hidden">
+                    <span class="font-mark-bold">$95/hour</span>
+                    <span class="text-grayish">estimated cost</span>
                   </div>
                 </div>
-                <!-- Online now badge -->
-                <div class="m-2 md:my-4 flex items-center gap-2 text-14">
-                  <span class="flex h-2 w-2 relative">
-                    <span
-                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-25"
-                    ></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green"></span>
-                  </span>
-                  <span class="text-grayish">Online now</span>
+                <div class="hidden md:flex flex-col justify-between items-end">
+                  <div>
+                    <h1 class="text-black font-mark-bold">$95/hour</h1>
+                    <p class="text-grayish text-xs">estimated cost</p>
+                  </div>
+                  <button class="btn-primary text-14">View Profile</button>
                 </div>
-                <p class="text-14 my-3 hidden md:block">
-                  Tobi O. says, "I will
-                  <span class="font-mark-bold">definitely recommend</span> them to anyone I...
-                  <span class="text-primary">See more</span>
-                </p>
-                <div class="text-14 md:hidden">
-                  <span class="font-mark-bold">$95/hour</span>
-                  <span class="text-grayish">estimated cost</span>
-                </div>
-              </div>
-              <div class="hidden md:flex flex-col justify-between items-end">
-                <div>
-                  <h1 class="text-black font-mark-bold">$95/hour</h1>
-                  <p class="text-grayish text-xs">estimated cost</p>
-                </div>
-                <button class="btn-primary text-14">View Profile</button>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
 
-          <div class="flex justify-center my-10">
-            <button
-              class="border-2 py-2 px-5 rounded text-grayish font-mark-bold focus:border-gray-500"
-            >
-              See More
-            </button>
+            <div class="flex justify-center my-10">
+              <button
+                class="border-2 py-2 px-5 rounded text-grayish font-mark-bold focus:border-gray-500"
+              >
+                See More
+              </button>
+            </div>
           </div>
         </div>
       </div>
