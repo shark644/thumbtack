@@ -677,23 +677,29 @@
     <main class="border-b">
       <div class="flex">
         <!-- Filter panel  -->
-        <div class="flex-shrink border-r py-10 px-5 text-14">
+        <div class="flex-shrink border-r py-10 px-10 text-14">
           <h2 class="font-mark-bold text-20 mb-5">Filters</h2>
           <div class="mb-5">
             <h3 class="filter__title flex gap-1">
               <span> Sort by Reviews </span>
               <span class="flex items-center">
-                <svg
-                  height="18"
-                  width="18"
-                  fill="currentColor"
-                  viewBox="0 0 18 18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.026 5.1c-1.097 0-2.076.554-2.56 1.443a.752.752 0 001.32.717c.217-.4.702-.658 1.24-.658.652 0 1.353.286 1.353 1.088-.008.308-.877 1.167-1.76 1.734a.752.752 0 00.407 1.382.74.74 0 00.404-.12c.575-.367 2.45-1.673 2.45-2.996 0-1.5-1.202-2.59-2.854-2.59zm4.223 8.15a6.01 6.01 0 01-8.49 0 6.01 6.01 0 010-8.491 5.982 5.982 0 014.246-1.756 5.98 5.98 0 014.244 1.756 6.01 6.01 0 010 8.491zm1.415-9.906c-3.12-3.12-8.199-3.12-11.32 0-3.12 3.12-3.12 8.2 0 11.32a7.98 7.98 0 005.66 2.341c2.05 0 4.1-.78 5.66-2.34 3.12-3.122 3.12-8.2 0-11.321zm-5.35 8.121a.732.732 0 00-.58 0 .748.748 0 10.58 1.38.75.75 0 000-1.38z"
-                  ></path>
-                </svg>
+                <div class="tooltip-wrapper">
+                  <svg
+                    height="18"
+                    width="18"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.026 5.1c-1.097 0-2.076.554-2.56 1.443a.752.752 0 001.32.717c.217-.4.702-.658 1.24-.658.652 0 1.353.286 1.353 1.088-.008.308-.877 1.167-1.76 1.734a.752.752 0 00.407 1.382.74.74 0 00.404-.12c.575-.367 2.45-1.673 2.45-2.996 0-1.5-1.202-2.59-2.854-2.59zm4.223 8.15a6.01 6.01 0 01-8.49 0 6.01 6.01 0 010-8.491 5.982 5.982 0 014.246-1.756 5.98 5.98 0 014.244 1.756 6.01 6.01 0 010 8.491zm1.415-9.906c-3.12-3.12-8.199-3.12-11.32 0-3.12 3.12-3.12 8.2 0 11.32a7.98 7.98 0 005.66 2.341c2.05 0 4.1-.78 5.66-2.34 3.12-3.122 3.12-8.2 0-11.321zm-5.35 8.121a.732.732 0 00-.58 0 .748.748 0 10.58 1.38.75.75 0 000-1.38z"
+                    ></path>
+                  </svg>
+                  <div class="tooltip down mt-3 bg-black">
+                    <p>This dummy tootltip is placed to be changed in later</p>
+                    <div class="up-arrow up-arrow--black"></div>
+                  </div>
+                </div>
               </span>
             </h3>
             <div class="flex">
@@ -719,8 +725,9 @@
           </div>
 
           <form action="">
+            <!-- bedroom options -->
             <div
-              class="filter__option"
+              class="filter__options"
               x-data="{ 
                 hideExtra: true, 
                 limit: 5,
@@ -779,6 +786,267 @@
                 </div>
               </div>
             </div>
+
+            <!-- bathroom options  -->
+            <div
+              class="filter__options"
+              x-data="{ 
+              hideExtra: true, 
+              limit: 5,
+              numOfOptions: $root.querySelectorAll('.filter__form-control')?.length
+            }"
+              x-effect="!hideExtra ? $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.remove('hidden')}) : $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.add('hidden')})"
+            >
+              <label class="filter__title" for="">Number of bathrooms</label>
+              <div class="filter__form-control">
+                <input type="radio" name="bathroom" id="bathroom-1" value="1" />
+                <label for="bathroom-1">1 bathroom</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="bathroom" id="bathroom-2" value="2" />
+                <label for="bathroom-2">2 bathroom</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="bathroom" id="bathroom-3" value="3" />
+                <label for="bathroom-3">3 bathroom</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="bathroom" id="bathroom-4" value="4" />
+                <label for="bathroom-4">4 bathroom</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="bathroom" id="bathroom-5" value="5" />
+                <label for="bathroom-5">5 bathroom</label>
+              </div>
+
+              <div
+                :class="numOfOptions > limit ? 'flex' : 'hidden'"
+                class="items-center text-primary cursor-pointer"
+                @click="hideExtra = !hideExtra"
+              >
+                <span x-text="hideExtra ? 'More' : 'Less'">More</span>
+                <div :class="hideExtra ? '' : 'rotate-180'">
+                  <svg
+                    height="14"
+                    width="14"
+                    fill="currentColor"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.236 5.323L7 10l3.793-4.706A.795.795 0 0011 4.75c0-.414-.299-.75-.667-.75a.623.623 0 00-.435.182L7 7.75 4.143 4.226C4.01 4.086 3.853 4 3.667 4 3.298 4 3 4.336 3 4.75c0 .23.1.402.236.573z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- cleaning options -->
+            <div
+              class="filter__options"
+              x-data="{ 
+              hideExtra: true, 
+              limit: 5,
+              numOfOptions: $root.querySelectorAll('.filter__form-control')?.length
+            }"
+              x-effect="!hideExtra ? $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.remove('hidden')}) : $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.add('hidden')})"
+            >
+              <label class="filter__title" for="">Cleaning type</label>
+              <div class="filter__form-control">
+                <input type="radio" name="cleaning" id="cleaning-1" value="1" />
+                <label for="cleaning-1">Standard cleaning</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="cleaning" id="cleaning-2" value="2" />
+                <label for="cleaning-2">Deep cleaning</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="cleaning" id="cleaning-3" value="3" />
+                <label for="cleaning-3">Move out cleaning</label>
+              </div>
+
+              <div
+                :class="numOfOptions > limit ? 'flex' : 'hidden'"
+                class="items-center text-primary cursor-pointer"
+                @click="hideExtra = !hideExtra"
+              >
+                <span x-text="hideExtra ? 'More' : 'Less'">More</span>
+                <div :class="hideExtra ? '' : 'rotate-180'">
+                  <svg
+                    height="14"
+                    width="14"
+                    fill="currentColor"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.236 5.323L7 10l3.793-4.706A.795.795 0 0011 4.75c0-.414-.299-.75-.667-.75a.623.623 0 00-.435.182L7 7.75 4.143 4.226C4.01 4.086 3.853 4 3.667 4 3.298 4 3 4.336 3 4.75c0 .23.1.402.236.573z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- extra services options -->
+            <div
+              class="filter__options"
+              x-data="{ 
+                        hideExtra: true, 
+                        limit: 5,
+                        numOfOptions: $root.querySelectorAll('.filter__form-control')?.length
+                      }"
+              x-effect="!hideExtra ? $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.remove('hidden')}) : $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.add('hidden')})"
+            >
+              <label class="filter__title" for="">Extra services</label>
+              <div class="filter__form-control">
+                <input type="checkbox" name="extraService" id="extraService-1" value="1" />
+                <label for="extraService-1">Window cleaning (interior)</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="checkbox" name="extraService" id="extraService-2" value="2" />
+                <label for="extraService-2">Fridge cleaning</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="checkbox" name="extraService" id="extraService-3" value="3" />
+                <label for="extraService-3">Oven cleaning</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="checkbox" name="extraService" id="extraService-4" value="4" />
+                <label for="extraService-4">Laundry</label>
+              </div>
+
+              <div
+                :class="numOfOptions > limit ? 'flex' : 'hidden'"
+                class="items-center text-primary cursor-pointer"
+                @click="hideExtra = !hideExtra"
+              >
+                <span x-text="hideExtra ? 'More' : 'Less'">More</span>
+                <div :class="hideExtra ? '' : 'rotate-180'">
+                  <svg
+                    height="14"
+                    width="14"
+                    fill="currentColor"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.236 5.323L7 10l3.793-4.706A.795.795 0 0011 4.75c0-.414-.299-.75-.667-.75a.623.623 0 00-.435.182L7 7.75 4.143 4.226C4.01 4.086 3.853 4 3.667 4 3.298 4 3 4.336 3 4.75c0 .23.1.402.236.573z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- pets options -->
+            <div
+              class="filter__options"
+              x-data="{ 
+                        hideExtra: true, 
+                        limit: 5,
+                        numOfOptions: $root.querySelectorAll('.filter__form-control')?.length
+                      }"
+              x-effect="!hideExtra ? $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.remove('hidden')}) : $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.add('hidden')})"
+            >
+              <label class="filter__title" for="">Pets</label>
+              <div class="filter__form-control">
+                <input type="radio" name="pet" id="pet-1" value="1" />
+                <label for="pet-1">No pets in home</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="pet" id="pet-2" value="2" />
+                <label for="pet-2">Pets in home</label>
+              </div>
+
+              <div
+                :class="numOfOptions > limit ? 'flex' : 'hidden'"
+                class="items-center text-primary cursor-pointer"
+                @click="hideExtra = !hideExtra"
+              >
+                <span x-text="hideExtra ? 'More' : 'Less'">More</span>
+                <div :class="hideExtra ? '' : 'rotate-180'">
+                  <svg
+                    height="14"
+                    width="14"
+                    fill="currentColor"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.236 5.323L7 10l3.793-4.706A.795.795 0 0011 4.75c0-.414-.299-.75-.667-.75a.623.623 0 00-.435.182L7 7.75 4.143 4.226C4.01 4.086 3.853 4 3.667 4 3.298 4 3 4.336 3 4.75c0 .23.1.402.236.573z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- frequency options -->
+            <div
+              class="filter__options"
+              x-data="{ 
+                        hideExtra: true, 
+                        limit: 5,
+                        numOfOptions: $root.querySelectorAll('.filter__form-control')?.length
+                      }"
+              x-effect="!hideExtra ? $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.remove('hidden')}) : $root.querySelectorAll('.filter__form-control')?.forEach((el, i) => {if(i >= limit) el.classList.add('hidden')})"
+            >
+              <label class="filter__title" for="">
+                <span>Frequency</span>
+                <span class="flex items-center">
+                  <div class="tooltip-wrapper">
+                    <svg
+                      height="18"
+                      width="18"
+                      fill="currentColor"
+                      viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 15c-3.309 0-6-2.691-6-6s2.691-6 6-6c3.31 0 6 2.691 6 6s-2.69 6-6 6zM9 1C4.589 1 1 4.589 1 9s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.75 7.25h-1.5a.752.752 0 01-.75-.75c0-.413.337-.75.75-.75h2.25a.75.75 0 000-1.5h-.75V5a.75.75 0 00-1.5 0v.25C7.01 5.25 6 6.26 6 7.5s1.01 2.25 2.25 2.25h1.5c.413 0 .75.337.75.75s-.337.75-.75.75H7.5a.75.75 0 000 1.5h.764c-.002.022-.014.044-.014.068V13a.75.75 0 001.5 0v-.182c0-.024-.012-.046-.014-.068h.014c1.24 0 2.25-1.01 2.25-2.25s-1.01-2.25-2.25-2.25z"
+                      ></path>
+                    </svg>
+                    <div class="tooltip up -mt-3 bg-black">
+                      <p>This dummy tootltip is placed to be changed in later</p>
+                      <div class="up-arrow up-arrow--black"></div>
+                    </div>
+                  </div>
+                </span>
+              </label>
+              <div class="filter__form-control">
+                <input type="radio" name="cleaning" id="cleaning-1" value="1" />
+                <label for="cleaning-1">Standard cleaning</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="cleaning" id="cleaning-2" value="2" />
+                <label for="cleaning-2">Deep cleaning</label>
+              </div>
+              <div class="filter__form-control">
+                <input type="radio" name="cleaning" id="cleaning-3" value="3" />
+                <label for="cleaning-3">Move out cleaning</label>
+              </div>
+
+              <div
+                :class="numOfOptions > limit ? 'flex' : 'hidden'"
+                class="items-center text-primary cursor-pointer"
+                @click="hideExtra = !hideExtra"
+              >
+                <span x-text="hideExtra ? 'More' : 'Less'">More</span>
+                <div :class="hideExtra ? '' : 'rotate-180'">
+                  <svg
+                    height="14"
+                    width="14"
+                    fill="currentColor"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.236 5.323L7 10l3.793-4.706A.795.795 0 0011 4.75c0-.414-.299-.75-.667-.75a.623.623 0 00-.435.182L7 7.75 4.143 4.226C4.01 4.086 3.853 4 3.667 4 3.298 4 3 4.336 3 4.75c0 .23.1.402.236.573z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <button class="text-primary text-16">Reset</button>
           </form>
         </div>
         <!-- Right panel -->

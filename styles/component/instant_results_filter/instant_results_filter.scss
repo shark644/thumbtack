@@ -16,7 +16,7 @@
   }
 
   .filter__title {
-    @apply font-mark-bold text-14 my-2;
+    @apply font-mark-bold text-14 my-2 flex items-center gap-1;
   }
   .filter__form-control {
     @apply flex items-center gap-2 accent-primary my-2;
@@ -25,6 +25,7 @@
     }
   }
 
-  .filter__option {
+  .filter__options {
+    @apply mb-4;
   }
 }

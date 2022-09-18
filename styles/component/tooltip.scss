@@ -8,7 +8,7 @@
   }
 
   .up {
-    @apply bottom-full h-max -translate-y-full -translate-x-1/4;
+    @apply bottom-full -top-12 left-1/2 -translate-x-1/2 h-max;
     .up-arrow {
       @apply rotate-180 top-full left-1/2 -translate-x-1/2;
     }
@@ -33,7 +33,7 @@
   background: #5968e2;
   color: #fff;
   // bottom: 0px;
-  inset: 0px auto auto 0px;
+  // inset: 0px auto auto 0px;
   z-index: 60;
   // @apply absolute w-max top-full -left-1/2 mt-4;
   @apply w-max absolute;
