@@ -7,16 +7,24 @@
 @import "@component/tooltip";
 @import "@component/result_card";
 @import "@component/related_categories";
+@import "@component/footer";
 
-.instant_results {
+.instant_results_filter {
   @apply overflow-x-hidden;
   .container {
     @apply w-full max-w-lg lg:max-w-5xl mx-auto p-5 overflow-hidden;
   }
-  .service-btn {
-    @apply text-12 text-primary font-mark-bold border-2 py-2 px-5 rounded-full hover:border-primary focus:underline;
+
+  .filter__title {
+    @apply font-mark-bold text-14 my-2;
   }
-  .service-btn--active {
-    @apply bg-primary border-primary text-white;
+  .filter__form-control {
+    @apply flex items-center gap-2 accent-primary my-2;
+    &--hidden {
+      @apply hidden;
+    }
+  }
+
+  .filter__option {
   }
 }
