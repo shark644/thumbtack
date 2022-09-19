@@ -1051,7 +1051,44 @@
         </div>
         <!-- Right panel -->
         <div class="flex-1">
-          <div class="max-w-lg md:max-w-2xl md:mx-auto py-10 mx-5 overflow-x-hidden">
+          <!-- Mobile filter panel -->
+          <div class="lg:hidden border-b border-gray-300">
+            <div class="max-w-lg md:max-w-2xl sm:mx-auto py-5 mx-5 overflow-x-hidden">
+              <div class="flex flex-col">
+                <div class="flex justify-between">
+                  <h2 class="font-mark-bold text-16">How many bathrooms?</h2>
+                  <button class="text-primary text-14 flex items-center">
+                    <span>Skip</span>
+                    <span>
+                      <svg
+                        height="14"
+                        width="14"
+                        fill="currentColor"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.323 10.764L10 7 5.294 3.207A.795.795 0 004.75 3c-.414 0-.75.298-.75.667 0 .166.069.318.182.435L7.75 7 4.226 9.857c-.14.133-.226.29-.226.476 0 .368.336.667.75.667.23 0 .402-.1.573-.236z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="flex flex-wrap mt-5 gap-2"
+                  x-data="{options: ['Standard cleaning', 'Deep cleaning', 'Move out cleaning']}"
+                >
+                  <template x-for="name in options">
+                    <button
+                      class="border-2 text-12 font-mark-bold rounded-full px-4 py-2 text-primary focus:bg-primary focus:text-white"
+                      x-text="name"
+                    ></button>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-lg md:max-w-2xl sm:mx-auto py-10 mx-5 overflow-x-hidden">
             <div class="flex items-center gap-1">
               <h1 class="font-mark-bold text-18">Top 10 Movers based on our criteria</h1>
               <div class="flex items-center tooltip-wrapper">
@@ -1554,7 +1591,7 @@
 
     <!-- Why Thumbtack -->
     <section class="py-5 border-b">
-      <div class="container">
+      <div class="w-full max-w-lg lg:max-w-5xl mx-auto p-5 overflow-hidden">
         <h1 class="text-center font-mark-bold text-20">Why hire professionals on Thumbtack?</h1>
         <div class="flex flex-col lg:flex-row gap-7 my-10">
           <div class="flex flex-col justify-center items-center gap-5">
@@ -1754,6 +1791,18 @@
         </div>
       </div>
     </section>
+
+    <!-- Flating filter btn on mobile  -->
+    <div class="fixed bottom-10 left-1/2 -translate-x-1/2 z-10 rounded-full">
+      <button
+        class="bg-primary text-white font-mark-bold flex items-center gap-1 text-16 px-4 py-2 rounded-full select-none focus:shadow-none"
+      >
+        <span class="bg-white text-primary w-5 h-5 flex items-center justify-center rounded"
+          >3</span
+        >
+        <span>Filters</span>
+      </button>
+    </div>
 
     <footer>
       <div class="mx-5 lg:mx-auto max-w-screen-lg lg:border-t">

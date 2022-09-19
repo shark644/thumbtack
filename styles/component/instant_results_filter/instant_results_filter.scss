@@ -11,9 +11,6 @@
 
 .instant_results_filter {
   @apply overflow-x-hidden;
-  .container {
-    @apply w-full max-w-lg lg:max-w-5xl mx-auto p-5 overflow-hidden;
-  }
 
   .filter__title {
     @apply font-mark-bold text-14 my-2 flex items-center gap-1;
