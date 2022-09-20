@@ -1,0 +1,18 @@
+@import "@styles/baseConfig";
+
+// $navBarExpandAt: "screens.lg";
+
+@import "@styles/baseStyles";
+@import "@component/topNoticeBar";
+@import "@component/navbar";
+@import "@component/tooltip";
+@import "@component/footer";
+
+.about {
+  .heading {
+    @apply font-mark-heavy text-[46px];
+  }
+  .heading--underlined {
+    @apply font-mark-bold border-b-4 border-black pb-2 uppercase text-14;
+  }
+}

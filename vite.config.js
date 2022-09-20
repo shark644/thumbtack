@@ -17,6 +17,7 @@ export default defineConfig({
         instant_results: resolve(__DIR__, "instant_results/index.html"),
         more_services: resolve(__DIR__, "more_services/index.html"),
         instant_results_filter: resolve(__DIR__, "instant_results_filter/index.html"),
+        about: resolve(__DIR__, "about/index.html"),
         // DON'T REMOVE THIS COMMENT! IT IS USED BY newpage SCRIPT
       },
     },
