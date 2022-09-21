@@ -20,13 +20,28 @@
   }
 
   .client-section {
-    @apply flex flex-col sm:flex-row justify-center gap-10;
+    @apply flex flex-col sm:flex-row justify-between gap-10;
 
     &__description {
       @apply max-w-[441px] sm:w-1/2;
     }
     &__image {
       @apply sm:w-1/2;
+    }
+  }
+
+  .number-card {
+    @apply rounded-xl p-6 flex flex-col justify-end text-left min-h-[230px] md:min-h-[370px] pb-14;
+    &--image {
+      @apply bg-no-repeat bg-cover bg-center;
+    }
+
+    // shapes
+    &--dome {
+      @apply rounded-t-full;
+    }
+    &--pill {
+      @apply rounded-full;
     }
   }
 }
