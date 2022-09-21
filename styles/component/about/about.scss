@@ -44,4 +44,17 @@
       @apply rounded-full;
     }
   }
+  .learn-more-card {
+    @apply grid grid-cols-12 border-b border-gray-300 last:border-b-0 pb-8 mb-8;
+
+    .icon {
+      @apply col-span-full sm:col-span-1 mb-2 sm:mb-0;
+    }
+    .title {
+      @apply col-span-full sm:col-span-2;
+    }
+    .description {
+      @apply col-span-full sm:col-span-6;
+    }
+  }
 }
