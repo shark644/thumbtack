@@ -20,13 +20,17 @@
   }
 
   .client-section {
-    @apply flex flex-col sm:flex-row justify-between gap-10;
+    @apply flex flex-col-reverse sm:flex-row justify-between gap-10;
 
     &__description {
       @apply max-w-[441px] sm:w-1/2;
     }
     &__image {
       @apply sm:w-1/2;
+    }
+
+    &--reverse {
+      @apply sm:flex-row-reverse;
     }
   }
 
