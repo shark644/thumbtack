@@ -3,6 +3,7 @@ module.exports = {
   content: ["./**/*.html"],
   important: true,
   theme: {
+    
     fontFamily: {
       mark: "Mark, Avenir, Helvetica, Arial, sans-serif",
       "mark-bold": "Mark bold, Avenir, Helvetica, Arial, sans-serif",
