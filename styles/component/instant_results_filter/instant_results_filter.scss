@@ -1,0 +1,34 @@
+@import "@styles/baseConfig";
+
+// $navBarExpandAt: "screens.lg";
+
+@import "@styles/baseStyles";
+@import "@component/navbar";
+@import "@component/tooltip";
+@import "@component/result_card";
+@import "@component/related_categories";
+@import "@component/footer";
+
+.instant_results_filter {
+  @apply overflow-x-hidden;
+
+  .filter__title {
+    @apply font-mark-bold text-14 my-2 flex items-center gap-1;
+  }
+  .filter__form-control {
+    @apply flex items-center gap-2 accent-primary my-2 cursor-pointer;
+    &--hidden {
+      @apply hidden;
+    }
+    input {
+      @apply cursor-pointer;
+    }
+    label {
+      @apply cursor-pointer;
+    }
+  }
+
+  .filter__options {
+    @apply mb-4;
+  }
+}

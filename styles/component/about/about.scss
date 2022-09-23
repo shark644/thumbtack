@@ -1,0 +1,64 @@
+@import "@styles/baseConfig";
+
+// $navBarExpandAt: "screens.lg";
+
+@import "@styles/baseStyles";
+@import "@component/topNoticeBar";
+@import "@component/navbar";
+@import "@component/tooltip";
+@import "@component/footer";
+
+.about {
+  .heading {
+    @apply font-mark-heavy text-[46px];
+  }
+  .heading--underlined {
+    @apply font-mark-bold border-b-4 border-black pb-2 uppercase text-14;
+  }
+  .quotation {
+    @apply text-primary font-mark-bold mr-2 text-[60px] -mt-[20px];
+  }
+
+  .client-section {
+    @apply flex flex-col-reverse sm:flex-row justify-between gap-10;
+
+    &__description {
+      @apply max-w-[441px] sm:w-1/2;
+    }
+    &__image {
+      @apply sm:w-1/2;
+    }
+
+    &--reverse {
+      @apply sm:flex-row-reverse;
+    }
+  }
+
+  .number-card {
+    @apply rounded-xl p-6 flex flex-col justify-end text-left min-h-[230px] md:min-h-[370px] pb-14;
+    &--image {
+      @apply bg-no-repeat bg-cover bg-center;
+    }
+
+    // shapes
+    &--dome {
+      @apply rounded-t-full;
+    }
+    &--pill {
+      @apply rounded-full;
+    }
+  }
+  .learn-more-card {
+    @apply grid grid-cols-12 border-b border-gray-300 last:border-b-0 pb-8 mb-8;
+
+    .icon {
+      @apply col-span-full sm:col-span-1 mb-2 sm:mb-0;
+    }
+    .title {
+      @apply col-span-full sm:col-span-2;
+    }
+    .description {
+      @apply col-span-full sm:col-span-6;
+    }
+  }
+}

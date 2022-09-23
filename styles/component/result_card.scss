@@ -1,0 +1,21 @@
+.result-card {
+  @apply flex gap-4 items-stretch border-b pb-5 my-7;
+  &__title {
+    @apply text-16 font-mark-bold hover:text-primary;
+  }
+
+  &__badge {
+    @apply text-12 bg-blue-100 py-1 px-3 rounded-full font-mark-bold flex items-center gap-1;
+    &--purple {
+      @apply bg-purple-100;
+    }
+  }
+
+  &__info {
+    @apply hidden md:flex items-center gap-2 text-grayish;
+
+    &--important {
+      @apply flex;
+    }
+  }
+}
