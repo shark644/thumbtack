@@ -7,4 +7,182 @@
   @import "@component/tooltip";
   @import "@component/footer";
   
-  .press {}
+  .press {
+    .hero{
+      padding: 64px 0;
+      min-height: 380px;
+      background-position: 50%;
+      background-image: url(https://cdn.thumbtackstatic.com/fe-assets-web/_assets/images/release/pages/press-page/images/press_desktop.ddb3986d967676efffab8e898f1aeacd.jpg);
+      @media  (min-width: 768px) {
+        .hero {
+          background-image: url(https://cdn.thumbtackstatic.com/fe-assets-web/_assets/images/release/pages/press-page/images/press_small_retina.f2fdc6c5a2a8338d31d23ff5e972fb06.jpg);
+        }
+        
+      }
+    }
+    .hero-tint{
+      z-index: 1;
+      background: rgba(47,48,51,.35);
+    }
+    .hero-grid{
+      z-index: 2;
+      flex: 1 0 100%;
+      margin: 0 auto;
+      font-size: 0;
+      display: block;
+      max-width: 946px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .hero-column{
+      order: 3;
+      margin:auto;
+    }
+    .hero-title{
+      font-size: 40px;
+      line-height: 44px;
+      color: #fff;
+    }
+    .hero-subtitle{
+      font-size: medium;
+      margin: auto;
+      display: none;
+    }
+    .hero-content-sub{
+      color:#fff;
+      padding-bottom: 35px;
+      font-size: 24px;
+      line-height: 32px;
+
+    }
+    .nav-tabs{
+      border-bottom: 1px solid #e9eced;
+      vertical-align: baseline;
+      @apply text-black;
+      height: 59px;
+    }
+    .nav-item-a{
+      display: inline-block;
+      
+      border-bottom: 2px solid transparent;
+      
+      
+      @apply text-grayish;
+      text-decoration: none;
+      @apply cursor-pointer;
+        &.selected-item{
+          @apply text-primary;
+          @apply border-b-primary;
+          &:hover{
+            @apply text-black;
+          }
+        }
+       
+      
+
+    }
+    .button{
+      background-color: #fff;
+      color: #009fd9;
+      border-color:#e9eced;
+      display: block;
+      padding: 13px 32px;
+      line-height: 20px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 4px;
+      border-width: 1px;
+      border-style: solid;
+      outline: none;
+      cursor: pointer;
+      font-weight: 700;
+      transition: all 0.2s ease;
+
+    }
+    .see-more{
+      margin-left: 33.33%;
+      font-size: medium;
+    }
+    .anchor-text{
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .company-headline{
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .date{
+      color: #676d73;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .company-item{
+      background-color: #fafafa;
+     
+    }
+    .company-heading{
+      font-size: medium;
+    }
+    .company-col{
+      font-size: medium;
+    }
+    .theme-grid{
+      padding-right: 16px;
+      max-width: 946px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0;
+      font-size: 0px;
+      margin: 0 auto;
+    }
+    .company-grid{
+      padding-right: 16px;
+      max-width: 946px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0;
+      font-size: 0px;
+      display: block;
+      margin: 0 auto;
+    }
+   .subtitle{
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #676d73;
+   }
+   .title{
+    font-size: 32px;
+    line-height: 40px;
+   }
+    .journal-heading{
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 946px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0;
+      font-size: 0px;
+      display: block;
+      margin: 0 auto;
+    }
+    .thumbtack-journal{
+      background-color: #fafafa;
+    }
+    
+    .journal-text{
+      color: #676d73;
+    }
+    .anchor{
+      color: #009fd9;
+      @apply cursor-pointer;
+      &:hover {
+        color: #009fd9;
+  
+        svg {
+          fill: currentColor;
+        }
+      }
+    }
+  }
